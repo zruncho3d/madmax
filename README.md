@@ -87,14 +87,17 @@ TODO: Add print-sample pictures.  Show examples with weight/time with 100% vs st
 
 MadMax is more than just the core and dock interfaces; already, **it is an entire toolchanger ecosystem** covering most common [Voron](https://vorondesign.com/) and [Printers for Ants](https://3dprintersforants.com/) printers, plus many open-source toolheads and extruders.  The main requirement is a front-facing MGN9H or MGN12H linear rail and XY head motion, so bed slingers are out.  Both 6mm and 9mm belt sizes are supported.
 
+A few of the supported heads: A4T, AntHead, OmniBrick, DragonBrick:
+
+| ![](Images/Toolheads_Rear.jpg) | ![](Images/Toolheads_Front.jpg) |
+| --- | --- |
+
 If you don’t see your printer in the list below, adding it tends to be straightforward.
 
-TODO: picture with heads
-
-| Rails | Belts | Toolheads (core only) | Toolheads (to docks) | Printers |
+| Rails | Belt Configs | Toolheads (core) | Toolheads (to docks) | Printers |
 | --- | --- | --- | --- | --- |
-| 2 | 2 | 4+ | 6+ | Lots |
-| MGN9H<br>MGN12 | 6mm<br>9mm| MiniSB<br>OmniBurner<br>DragonBurner<br>RapidBurner<br>A4T<br>XOL | DragonBrick<br>AntHead<br>A4T<br>A4TBrick<br>OmniBrick<br> |  Voron Trident<br>Voron Zero<br>Micron<br>Salad Fork<br>Tri-Zero<br>Pandora's Box<br>
+| 2 | 3 | 4+ | 6+ | Lots |
+| MGN9H<br>MGN12H | 6mm w/3mm sep<br>6mm w/3mm sep<br>9mm w/4mm sep| MiniSB<br>OmniBurner<br>DragonBurner<br>RapidBurner<br>A4T<br>XOL | DragonBrick<br>RapidBrick<br>AntHead<br>A4T<br>A4TBrick<br>OmniBrick<br> |  Voron Trident<br>Voron Zero<br>Micron<br>Salad Fork<br>Tri-Zero<br>Pandora's Box<br>
 
 TODO: link to full-detail compatibility matrix.
 
