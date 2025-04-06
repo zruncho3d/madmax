@@ -2,15 +2,15 @@
 
 **Follow the instructions here to ensure a high-quality build.**
 
-Sure, you can just look at the diagrams and BOM and ignore the instructions (or any build videos). Please… don’t do that.
+Sure, you can just look at the CAD and BOM and ignore the instructions (or any build videos).
 
-There are some non-typical techniques used here, like reaming holes to match pins, plus intentionally overtorquing screws to match-fit holes.
+But please… don’t do that. There are some non-typical techniques used here, like reaming holes to match pins, plus intentionally overtorquing screws to match-fit holes.  
 
 Order matters, too.  The fastest approach is to build the carriage and plate, then test them together first, then put them on the printer and actually print with them.  
 
-Only then, should you proceed to the dock side and other software configuration.  Breaking the steps into smaller testable pieces, with intermediate milestones, tends to keep builds on track.  
+Only then, should you proceed to the dock-side hardware and other software configuration.  Breaking the steps into smaller testable pieces, with intermediate milestones, tends to keep builds on track.  
 
-Don’t worry, you can do it!
+You can do it!
 
 ### Print Settings
 

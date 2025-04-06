@@ -30,8 +30,6 @@ TODO: finish table below withs submissions
 | Sam's V0.2 120mm +30X (MM.009) |  | |
 | r2pdx's Micron 180 (MM.010) | ![](Images/Builds/r2pdx_10_front_1920.jpg) | ![](Images/Builds/r2pdx_10_part_1080.jpg) | Micron 180r1, 2x Anthead toolheads with modified ducts and WWG2 extruders, Nudge, gantry-mounted docks by r2pdx (also tested frame mounted docks).<br><br>On its way to becoming doomed! |
 
-TODO: link more printer and print videos
-
 Learn more from videos:
 * [Canuck Creator interviews Ambrosia](https://www.youtube.com/watch?v=dB9FqNF6or0&t=164s) - with a MadMax Trident
 * Fast toolchanges and motion with Andrew's build
@@ -76,12 +74,10 @@ The surprise is that you can enable *many* new capabilities, with only about $10
 
 | Use case | Multiple colors  | Multiple materials | Full-contact supports | Tap replacement |
 | --- | --- | --- | --- | --- |
-| Example(s) | Two-color benchy, label with contrast | Hard + Flex: screwdriver with grip | Figurines with overhangs | Pic showing vs Tap on scale |
-| Benefits |  No adhesion issues/bleed vs MMU, vastly reduced waste and delay, can use TPU | No adhesion/mixing issues vs MMU, vastly reduced waste and delay | Clean support interfaces, with no mixing issues with an MMU | Lighter weight and better IS results, plus detach head for easy maintenance |
+| Example(s) | ![](Images/r2pdx_dragon.jpg)<br>Dragon print by r2pdx, on MM.010 |  ![](Videos/rob_flexbox.mp4) | Figurines with overhangs | Pic showing vs Tap on scale |
+| Benefits |  No adhesion issues/bleed vs MMU, vastly reduced waste and delay, can use TPU | No adhesion/mixing issues vs MMU, vastly reduced waste and delay | Clean support interfaces, with no mixing issues vs MMU | Lighter weight and better IS results, plus detach head for easy maintenance |
 
 Unlike toolchanger designs that require up/down docking motion, MadMax supports static-gantry printers (like Voron Trident), *without* the added cost/complexity of a [liftbar](https://github.com/viesturz/tapchanger/blob/main/Dock/Liftbar/Liftbar.md).  XY-only toolchanges are lightning-fast, which can speed up overall print time, improve multi-extruder print quality, simplify print tuning, and reduce priming waste.
-
-TODO: Add print-sample pictures.  Show examples with weight/time with 100% vs stock, to motivate the choice vs MMU.
 
 ## An entire toolchanger ecosystem
 
