@@ -89,8 +89,12 @@ MadMax is more than just the core and dock interfaces; already, **it is an entir
 
 If you don’t see your printer in the list below, adding it tends to be straightforward.
 
-TODO: "MadMax Toolchanger Ecosystem" table:
-Below: Belts: 3x, Rails 2x+ [MGN9H, MGN12H], Toolheads 5x+ [MSB/OB, DB/AH, XOL/A4T], Prints
+TODO: picture with heads
+
+| Rails | Belts | Toolheads (core only) | Toolheads (to docks) | Printers |
+| --- | --- | --- | --- | --- |
+| 2 | 2 | 4+ | 6+ | Lots |
+| MGN9H<br>MGN12 | 6mm<br>9mm| MiniSB<br>OmniBurner<br>DragonBurner<br>RapidBurner<br>A4T<br>XOL | DragonBrick<br>AntHead<br>A4T<br>A4TBrick<br>OmniBrick<br> |  Voron Trident<br>Voron Zero<br>Micron<br>Salad Fork<br>Tri-Zero<br>Pandora's Box<br>
 
 TODO: link to full-detail compatibility matrix.
 
