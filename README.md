@@ -72,12 +72,15 @@ This mod is for those who want a more capable printer.
 
 The surprise is that you can enable *many* new capabilities, with only about $100, one night of printing, one night of building, and one night of configuration and tuning.
 
-| Use case | Multiple colors  | Multiple materials | Full-contact supports | Tap replacement |
+| Use case | Multiple colors  | Multiple materials | Full-contact supports | Tap/Boop replacement |
 | --- | --- | --- | --- | --- |
-| Example(s) | ![](Images/r2pdx_dragon.jpg)<br>Dragon print by r2pdx, on MM.010 |  ![](Videos/rob_flexbox.mp4) | Figurines with overhangs | Pic showing vs Tap on scale |
+| Example(s) | ![](Images/r2pdx_dragon.jpg) |  ![](Images/Rob_flexbox.png) | ![](Images/Ambrosia_magpie_small.jpg)  | ![](Images/Core_on_scale.jpg) |
+| Notes | Dragon printed by r2pdx, on MM.010 | Flexible box printed by Rob on MM.001 | Magpie printed by Ambrosia on MM.003  | Core weighs ~50g  |
 | Benefits |  No adhesion issues/bleed vs MMU, vastly reduced waste and delay, can use TPU | No adhesion/mixing issues vs MMU, vastly reduced waste and delay | Clean support interfaces, with no mixing issues vs MMU | Lighter weight and better IS results, plus detach head for easy maintenance |
 
-Unlike toolchanger designs that require up/down docking motion, MadMax supports static-gantry printers (like Voron Trident), *without* the added cost/complexity of a [liftbar](https://github.com/viesturz/tapchanger/blob/main/Dock/Liftbar/Liftbar.md).  XY-only toolchanges are lightning-fast, which can speed up overall print time, improve multi-extruder print quality, simplify print tuning, and reduce priming waste.
+Unlike toolchanger designs that require up/down docking motion, MadMax supports static-gantry printers (like Voron Trident), *without* the added cost/complexity of a [liftbar](https://github.com/viesturz/tapchanger/blob/main/Dock/Liftbar/Liftbar.md).  
+
+XY-only toolchanges are lightning-fast, which can speed up overall print time, improve multi-extruder print quality, simplify print tuning, and reduce priming waste.
 
 ## An entire toolchanger ecosystem
 
@@ -90,12 +93,10 @@ A few of the supported heads: A4T, AntHead, OmniBrick, DragonBrick:
 
 If you don’t see your printer in the list below, adding it tends to be straightforward.
 
-| Rails | Belt Configs | Toolheads (core) | Toolheads (to docks) | Printers |
+| Carriages | Belt Configs | Toolheads (core only) | Toolheads (to docks) | Printers |
 | --- | --- | --- | --- | --- |
-| 2 | 3 | 4+ | 6+ | Lots |
-| MGN9H<br>MGN12H | 6mm w/3mm sep<br>6mm w/3mm sep<br>9mm w/4mm sep| MiniSB<br>OmniBurner<br>DragonBurner<br>RapidBurner<br>A4T<br>XOL | DragonBrick<br>RapidBrick<br>AntHead<br>A4T<br>A4TBrick<br>OmniBrick<br> |  Voron Trident<br>Voron Zero<br>Micron<br>Salad Fork<br>Tri-Zero<br>Pandora's Box<br>
-
-TODO: link to full-detail compatibility matrix.
+| 2 | 3 | 4+ | 7+ | Lots |
+| MGN9H<br>MGN12H | 6mm w/3mm sep<br>6mm w/3mm sep<br>9mm w/4mm sep| MiniSB<br>OmniBurner<br>DragonBurner<br>RapidBurner<br>A4T<br>XOL | DragonBrick<br>RapidBrick<br>AntHead<br>A4T<br>A4TBrick<br>OmniBrick<br>XOL<br> |  Voron Trident<br>Voron Zero<br>Micron<br>Salad Fork<br>Tri-Zero<br>Pandora's Box<br>
 
 ## Easy to print, build, and configure
 
