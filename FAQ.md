@@ -2,7 +2,7 @@
 
 Q: How does this compare to other toolchanger options?
 
-A: The main way this is unique is that the kinematic coupling uses XY motion only, and does not also have a positive lock.  For comparisons to other open-source projects, keep reading.
+A: The main way this is unique is that the kinematic coupling uses XY motion only, and does not have a positive lock.  For comparisons to other open-source projects, keep reading.
 
 Q: How is this different from TapChanger/Stealthchanger/MISSChanger?
 
@@ -11,7 +11,7 @@ A: These are key ways:
 	This enables many printers to get a toolchanger addition; Trident, Salad Fork, V0, T0, (Monolith?), etc.
  * As a result, toolchanges are faster, without having to go to 48V or do any optimization, because there’s no Z motion needed.
 * The attachment mechanism differs; it doesn’t have a positive lock, only magnetic.
-* The stock docks are different.
+* The stock docks are different, and don't need Z motion.
 
 Q: How is this different from Daksh?
 
@@ -23,11 +23,11 @@ A: See below.
 
 Q: Why not just use an IDEX?
 
-A: With an IDEX, you need at least one extra motor driver, need a frame that supports the custom IDEX kinematics, and Y moves are necessarily slower, since you have two toolheads’ worth of inertia to overcome.  There’s also a second head stuck there when you don’t want it, which requires a larger frame or reduces travel, and makes a conversion harder.
+A: With an IDEX, you need at least one extra motor driver and Y moves are necessarily slower, since you have two toolheads’ worth of inertia to overcome.  There’s also a second head stuck there when you don’t want it, which requires a larger frame or reduces travel, and makes a conversion harder; you rarely see stock-square printers with IDEX conversions.
 
 Q: Why not just use a Dual Gantry if you’re going to have two heads?
 
-A: For MadMax: easier conversion, use more mods, lower cost, uses any printer, easier maintenance, lower complexity, stock Klipper kins, … the list goes on.  That said, DG avoids the complexity/risk of a kinematic coupling, and has more toolhead choice as a result.
+A: MadMax vs DG: easier conversion, use more off-the-shelf mods, lower cost, uses any printer, easier maintenance, lower complexity, stock Klipper kins, … the list goes on.  That said, DG avoids the complexity/risk of a kinematic coupling, and has more toolhead choice as a result.
 You can even mix the two, and try out MadMax in place on your D0.  Zruncho’s done this crazy thing - putting a toolchanger inside a deal gantry printer.  It’s all reversible and easily installed.  You can even keep all the wiring in place.
 
 Q: Why not just use a magnetic IDEX here?
@@ -36,7 +36,7 @@ A: “Magnetic IDEX” - more accurately named Shared-Axis Toolchanger (SATC) - 
 
 Q: What toolheads can I use with MadMax?
 
-A: Anything compatible with the toolhead plate choices.  See above.
+A: Anything compatible with the toolhead plate choices. See the Getting Started guide.
 
 To attach to the docks, your toolhead needs to have the holes for the FHCSes already in place, or you can use a template to add those holes in, “in post”.
 
@@ -45,7 +45,9 @@ Q: How much print space do I lose?
 
 A: It depends on the type of print and whether you make adjustments to enable a fixed Nudge mount.
 The below assumes that the bed is close to the size of the printable XY space, and that we have a static-gantry printer or docks-ride-with-gantry flying-gantry printer.
-[Add diagram - Z has this - with space loss shown]
+
+![](Renders/Printable_Space.png)
+
 * For single-extruder prints - assuming you detach one head for single-extruder prints:
  * X
    * None, if your printer already has 3mm of X overtravel on one side.
@@ -78,8 +80,8 @@ A: Depends on the printer of course, but also on available overtravel, as well a
 
 Q: What unknowns remain in the design?
 
-A: For full disclosure, we don’t know everything about it.  Early dev started in later 2023, but there are still some “how well does it work in practice” questions.
-* Whether the magnet hold is sufficient for superhigh accels and heavier toolheads, especially at elevated chamber temps.  So far, so good, even with crazy accels on Andrew’s special-driver trident [citation needed].
+A: For full disclosure, we don’t know everything about it.  Early dev started in later 2023, but there are still some “how well does it work in practice?” questions.
+* Whether the magnet hold is sufficient for superhigh accels and heavier toolheads, especially at elevated chamber temps.  So far, so good, even with crazy accels on Andrewmcgr's TMC4671-based Trident.
 * Pull on the belts from attach/detach triggers viscoelastic hysteresis effects that may create errors within a print, over time.
 * Whether Maxwell probing accuracy and Nudge alignment accuracy retains with higher chamber temps, and over time.
 * What are the IS effects?
@@ -124,5 +126,3 @@ Q: Why not add a fridge door?
 A:
 * Go ahead!  It makes everything easier.  You can then mount Nudge to the front extrusion and can fit a larger 130x130 MRW bed in place.
 * If you do this, you may want to shift the docks forward slightly to make use of the extra travel.
- *
- *
