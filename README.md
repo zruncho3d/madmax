@@ -2,9 +2,7 @@
 
 Enable multi-material printing *on the printer you already own* - with low cost, low effort, low filament waste, and fast multi-material switching.
 
-| ![](Renders/Core_Front_Iso.png) | ![](Renders/Core_Rear_Iso.png) |
-| --- | --- |
-| Front | Rear |
+![](Renders/Front_and_back_no_trans.png)
 
 | ![gif](*.gif) | ![gif](*.gif) | ![gif](*.gif) |
 | --- | --- | --- |
@@ -14,7 +12,7 @@ TODO: table with GIFs covering the main steps - ideally all perfect loops, all v
 
 **MadMax is currently in active beta**, with over 10 builds doing reliable two-head prints:  
 
-TODO: finish table below withs submissions
+TODO: finish Beta member table with standard front views, parts examples, and descriptions
 
 | Printer | Image | Sample | Description |
 | --- | ---- | ---- | ---- |
@@ -32,10 +30,12 @@ TODO: finish table below withs submissions
 
 Learn more from videos:
 * [Canuck Creator interviews Ambrosia](https://www.youtube.com/watch?v=dB9FqNF6or0&t=164s) - with a MadMax Trident
+* [Speedclips.... they're real, and they're spectacular](https://www.youtube.com/watch?v=UsWV_GbRdjc)
 * Fast toolchanges and motion with Andrew's build
 * Core Build
-* [Speedclips.... they're real, and they're spectacular](https://www.youtube.com/watch?v=UsWV_GbRdjc)
 * Selecting a Toolhead
+
+TODO: add videos for intial learning
 
 **This is an advanced mod**: you must be comfortable with modifying Klipper configs and debugging related error messages.
 
@@ -55,16 +55,17 @@ A combination of new parts makes it possible:
   * Yes, you heard that correctly!   The core carriage+plate mechanism _is_ the probe, if you want.  The Maxwell coupling is engineered to slide in place with low friction, enabling high-quality probing up there with Tap and Boop, but lighter, lower-cost, and with more stable motion.  Here's a sample probe run:
   `probe accuracy results: ... range 0.002031,... standard deviation 0.000548`.  Not bad!  In fact, you can use the core on non-toolchangers too, as a Tap/Boop replacement.
 * **Clips:** The new SpeedClips belt clips are the fastest belt attachment mechanism in the west, plus enable repeatable tensioning.
-* **Docks:** The docks use simple keyslots and magnets, with the toolhead modified to add ferrous flat-head screws.  It's all light, low-cost, and small.
+* **Docks:** The docks use simple keyslots and magnets, with the toolhead modified to add ferrous flat-head screws.  It's all light, low-cost, small, and simple.
 
-All parts use easily-available purchased components, like pins, screws, and magnets.  You may already have everything you need to build this in your toolbox!
+All parts use easily-available purchased components, like pins, screws, and magnets.  You may already have everything you need to build this in your toolbox!   It’s more straightforward mod than you might think.
 
 So, what's the catch?
 * Some lost XY build area, when printing with two heads. Space loss is inherent to all toolchangers, but for single-head prints, you can detach the second head in seconds, to restore nearly 100% of the original build volume.
-* No positive lock on the toolhead - only a magnetic hold.  In practice, this works fine, and means that no complex locking mechanism or motors are needed, plus enables the new probing method.  It's safe; should the head detach for any reason, the firmware immediately safes the printer, just like with any other fault.
-* Some toolheads are not currently supported, namely Stealtburner and Archetype, but these may be community additions in the future.
+* No positive lock on the toolhead - only a magnetic hold.  In practice, this works fine, and means that no complex locking mechanism or motors are needed, plus enables the probing method.  It's safe; should the head detach for any reason, the firmware immediately safes the printer, just like with any other fault.
+* Some printers and toolheads will need a completed port.
+* No builds beyond two heads, yet - but this is the sweet spot for high-speed multimaterial.
 
-That’s about it.  It’s a more straightforward mod than you might think.
+That’s about it.  Read on to learn what a MadMax can do.
 
 ## Enable serious new capabilities
 
@@ -80,31 +81,39 @@ The surprise is that you can enable *many* new capabilities, with only about $10
 
 Unlike toolchanger designs that require up/down docking motion, MadMax supports static-gantry printers (like Voron Trident), *without* the added cost/complexity of a [liftbar](https://github.com/viesturz/tapchanger/blob/main/Dock/Liftbar/Liftbar.md).  
 
-XY-only toolchanges are lightning-fast, which can speed up overall print time, improve multi-extruder print quality, simplify print tuning, and reduce priming waste.
+XY-only toolchanges are lightning-fast, which can speed up overall print time, improve print quality, simplify print tuning, and reduce priming waste.
 
 ## An entire toolchanger ecosystem
 
-MadMax is more than just the core and dock interfaces; already, **it is an entire toolchanger ecosystem** covering most common [Voron](https://vorondesign.com/) and [Printers for Ants](https://3dprintersforants.com/) printers, plus many open-source toolheads and extruders.  The main requirement is a front-facing MGN9H or MGN12H linear rail and XY head motion, so bed slingers are out.  Both 6mm and 9mm belt sizes are supported.
-
-A few of the supported heads: A4T, AntHead, OmniBrick, DragonBrick:
-
-| ![](Images/Toolheads_Rear.jpg) | ![](Images/Toolheads_Front.jpg) |
-| --- | --- |
-
-If you don’t see your printer in the list below, adding it tends to be straightforward.
+MadMax is more than just the core and dock interfaces; already, **it is an entire toolchanger ecosystem** covering many common [Voron](https://vorondesign.com/) and [Printers for Ants](https://3dprintersforants.com/) printers, plus many open-source toolheads and extruders.  
 
 | Carriages | Belt Configs | Toolheads (core only) | Toolheads (to docks) | Printers |
 | --- | --- | --- | --- | --- |
 | 2 | 3 | 4+ | 7+ | Lots |
 | MGN9H<br>MGN12H | 6mm w/3mm sep<br>6mm w/3mm sep<br>9mm w/4mm sep| MiniSB<br>OmniBurner<br>DragonBurner<br>RapidBurner<br>A4T<br>XOL | DragonBrick<br>RapidBrick<br>AntHead<br>A4T<br>A4TBrick<br>OmniBrick<br>XOL<br> |  Voron Trident<br>Voron Zero<br>Micron<br>Salad Fork<br>Tri-Zero<br>Pandora's Box<br>
 
+If you don’t see your printer in the list below, adding it tends to be straightforward.
+
+The main requirement is a front-facing MGN9H or MGN12H linear rail and XY head motion, so bed slingers and rail riders are out.
+
+A few of the supported heads: A4T, AntHead, OmniBrick, DragonBrick:
+
+| ![](Images/Toolheads_Rear.jpg) | ![](Images/Toolheads_Front.jpg) |
+| --- | --- |
+
+Note that MGN9H plates have a diamond of magnets, whereas MGN12H plates have a square of magnets.
+
 ## Easy to print, build, and configure
 
-All parts are easy and fast to print, with no large overhangs, large bridges, and supports included.  Here's a full plate for a MadMax Trident conversion using DragonBrick heads:
+All parts are easy and fast to print, with no large overhangs, no large bridges, and supports included.  
 
-TODO: show all parts needed for a core and two-head setup, in one image
+Here's a full plate for the MadMax core parts for a conversion:
 
-The entire conversion can be done in an evening, as covered by instructional videos.  No individual steps are hard.
+![](Renders/plate.png)
+
+To this plate, you would add printer-specific toolheads and docks.
+
+The entire conversion can be done in an evening, as covered by instructional videos, and no individual steps are hard.
 
 TODO: Video: building MadMax: core build
 
