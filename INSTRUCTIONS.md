@@ -18,70 +18,73 @@ Regular Voron **toolhead** considerations (materials and printing) apply here, a
 
 **Settings:** All parts will print at stock Voron settings (0.4mm nozzle, 0.2mm layer height, 4+ walls, 5 top/bottom, 40%), but more perimeters, top/bottom layers, and more infill will help ensure rigidity.  You want these parts strong, so print extra extra hot, in a hot chamber.  The bridges are short, anyway!
 
-**Material:** ABS works fine to print PLA in unenclosed systems, but in an enclosure, especially a well-insulated one, the carriage and plate see high temps, so use the most temperature- and creep-resistant plastic you can print.  ASA is recommended over ABS, but PC or PC-ABS are even better.  Many nylons, even “High Temperature” ones, may suffer from creep, so avoid them.
+**Material:** ABS works fine to print PLA in unenclosed systems, but in an enclosure, especially a well-insulated one, the carriage and plate see high temps, so use a more temperature- and creep-resistant plastic if you can.  ASA is recommended over ABS, but PC or PC-ABS are even better.
 
-**Test Print:** A `Test_Print.stl` in included; print this part to confirm your sizing first.  The magnet should press in with force, the FHCS should snap into place, the heatset should fit securely, and the part should be at the right height.
+**Test Print:** A `Test_Print.stl` is included; print this part to confirm your sizing first.  The magnet should press in with force, the FHCS should snap into place, the heatset should fit securely, and the part should be at the right height.
 
 **Parts:** Print all parts matching your carriage size and toolhead type. Typical printing:
 * 1x Carriage
 * 2x Plates
 * 2x Belt Clips
 * 2x Docks
-* 2x Toolhead parts
+* 2x Toolhead parts (cowling, extruder, TH board mount, ...)
 
-The no-brace plate parts are only for Dragon heatblocks, to add clearance.
+The no-brace MGN9 plate is for Dragon heatblocks, to add clearance.
 
-For all docks and toolhead parts, check with the provider.  As a static part in a cooler spot, PLA/PETG and lowered infill percentage are probably acceptable.
+For all docks and toolhead parts, check with the provider.
 
 **Tools:**
-The following tools are recommended for a complete build:
-* 2mm straight hex driver (not balldriver)
-* 2.5mm straight hex driver (not balldriver)
-* Pliers Wrench (Knipex 180mm+ length preferred)
-* Crimp tool for ring terminals
-* Countersink
-* 3mm Reamer [Amazon](https://www.amazon.com/dp/B07K49B4LC)
-* 1/8" Reamer [Amazon](https://www.amazon.com/dp/B07JPDSSBM)
+The following tools are rquired for a complete build:
+* 2mm straight hex driver (not balldriver) - for M3 BHCS
+* Crimp tool - for ring terminals
 * Wire stripper
 * Flush cutters
 * Wire cutters
-* 2.9mm drill bit
-* Holder for reamer and hand drills [Amazon](https://www.amazon.com/dp/B07TRGW3W7)
-* Powered drill (for 2.9mm drill bit)
+* Bench vise
+* Calipers
 * Multimeter
+
+Optional, but recommended:
+* 2.5mm straight hex driver (not balldriver) - for M3 SHCS
+* 3mm Reamer [Amazon](https://www.amazon.com/dp/B07K49B4LC)
+* 1/8" Reamer [Amazon](https://www.amazon.com/dp/B07JPDSSBM)
+* Holder for reamer and hand drills [Amazon](https://www.amazon.com/dp/B07TRGW3W7)
+* Countersink - for part cleaning
+* Pliers Wrench (Knipex 180mm+ length preferred) - for magnet insertion
+* Scale for measuring probe force [Amazon](https://www.amazon.com/dp/B08SM4TB8P)
 * (If homing with endstop switch)
   * Soldering iron
   * Lighter or heat gun for heatshrink
-
-Optional for testing:
-* Scale for measuring probe force [Amazon](https://www.amazon.com/dp/B08SM4TB8P)
+* 2.9mm drill bit
+* Powered drill (for 2.9mm drill bit)
 
 TODO: pic of tools
 
 ### Carriage
 Build the carriage first, so you can match both plates to it.
 
-TODO: add carriage pic/render; exploded diagram?
+| ![](Renders/Carriage_MGN9H_Front_Iso.png) | ![](Renders/Carriage_MGN9H_Rear_Iso.png) |
+| --- | --- |
+| Front | Rear |
 
 TODO: show pic of parts required for carriage build.
 
-There are two types of FHCS used here: magnet-retention screws up top (3x, stainless or alloy), and electrical-connection screws below (2x, must be stainless).
+There are two types of FHCS used here: magnet-retention screws up top (3x, stainless or alloy), plus electrical-connection screws below (2x, must be stainless).
 * Tips
- * Create a “nut push tool”: an M3x8 SHCS plus M3 nut, twisted into a spare M3 T-nut.  Adjust the depth to ensure nuts get pushed in fully!  
-   * TODO: add pic
+ * Create a “nut push tool”: an M3x8 SHCS plus M3 nut, twisted into a spare M3 T-nut.  Later - adjust the depth to ensure nuts get pushed-in fully to the plastic part!  
+   * TODO: add pic of nut push tool
  * If magnets don’t fit, likely because the print is overextruded, use a 6mm drill bit or reamer plus spot of glue.
- * Magnet removal: All magnets can be removed from the backside by pushing hard with the short side of an allen wrench; having the allen wrench on a table and the part on top makes it easier to push hard, but be careful to cup your hand over the magnet so it doesn’t disappear.
+ * Magnet removal: All magnets can be removed from the backside by pushing hard with the short side of an allen wrench; having the allen wrench on a table and the part on top makes it easier to push hard, but be careful to cup your hand over the magnet so the magnet doesn’t disappear with a vengeance, into your eye.
 * Prep
- * TODO: add exploded carriage diagram here
  * Clear any elephant foot for magnet holes with a countersink bit.
  * Clear out the 4x carriage-mount holes with a 3mm reamer or drill bit.
- * ⚠️Measure your pin diameters.  You want holes right at the measured size, with whatever drill bit or reamer you have.
+ * ⚠️Measure your pin diameters with calipers.  You want holes right at the measured size, with whatever drill bit or reamer you have.
    * Plastic can have some slight dimensional variation here.  Steel pins should be spot-on.
  * Clear out the 2 top holes for the belt-clip pins with a reamer.  Test it with a pin; you should have a loose slip fit, where the pin inserts and removes easily.  Tension and gravity will hold it securely in place.
  * ⚠️GENTLY clean all 6x pin holes with a reamer, to avoid the carriage splitting between layers when you add the pins.  A light twist is probably more than enough.
  * Make plastic pins (4x)
-   * Typically 9-10mm is a good length for these.  To cut acetal, DON’T use a tube cutter, as you may destroy it!  Use something stronger, like thick wire cutters or flush cutters.  Mark a length with a sharpie, then cut to length, then trim the ends for easier insertion.
- * (Sensored Homing option only - recommended)
+   * Typically 9-10mm is a good length for these.  To cut acetal, DON’T use a tube cutter, as you may destroy it!  Use something stronger, like thick wire cutters or flush cutters.  Mark a length with a Sharpie, then cut to length, then trim the ends for easier insertion.
+ * (Endstop-switch-based homing option only - recommended)
    * Cut two 60mm wires and strip one end of each.
    * Solder and heatshrink both wires to the switch.
  * (Sensorless homing option only)
@@ -102,15 +105,14 @@ There are two types of FHCS used here: magnet-retention screws up top (3x, stain
    * Lighter toolheads may be OK with weaker grip; for example, 2x N52 for a 280g toolhead.
    * Heavier toolheads (350g+) will need more magnetic force for a solid toolhead grip; typically 3x N52, minimum.
    * Be careful to get the polarities right!  You want neighboring magnets to have opposing polarities, for more grip.
-   * **TODO: diagram of magnet options, mgn9 + 12, labeled with polarities**
- * Push the magnets (toolhead + lower 2) to where they hold in place, then use a pliers wrench, small vise, or body weight and a flat surface, push.  If pressing with fingers, find a slightly larger-dia magnet or other surface to prevent going in too far (say, 8mm dia magnet).  They should press-fit flush without issue.
+ * Push the magnets (toolhead + lower 2) to where they hold in place, then use a pliers wrench, small vise, or body weight and a flat surface, push.  If pressing with fingers, find a slightly larger-dia magnet or other surface to prevent going in too far (say, 8mm dia magnet).  They should press-fit flush without issue, then hold without anything else.
 * Add upper nuts
- * Fully insert the 3x nuts that will secure magnet-retention FHCSes.
+ * Fully insert the 3x nuts that will secure the magnet-retention FHCSes.
 * Add magnet-retention FHCSes
- * Add 3x magnet-retention FHCSes; tighten until the FHCS heads are flush.  Yes, you’ll apply a lot of force here, and the magnet will move down slightly.
+ * Add 3x magnet-retention FHCSes; tighten until the FHCS heads are flush.  Yes, you’ll apply a lot of force here, and the magnet will move down slightly.  To check flush-ness, use a rigid PCB ruler if you have one.
 * (Sensored homing only)
  * The orientation of the switch (plunger up, or plunger down?) will depend on the printer type.
- * Secure the endstop switch with two M2 self-tappers; fully tighten them, but be careful not to overtighten.
+ * Secure the endstop switch with two M2 self-tapping screws; fully tighten them, but be careful not to overtighten.
 * Add electrical-wire connections
  * Slip an M3 shim in from the bottom.
  * Push a shiny metal FHCS through the washer, so the washer stays in place.
@@ -119,106 +121,112 @@ There are two types of FHCS used here: magnet-retention screws up top (3x, stain
  * Pull wire hard, to confirm connection quality.
  * Repeat for the other side; trim and restrip if desired.
 * Test
- * Look at the plate, with a light source behind it.  You should see a fraction of a millimeter, all over.  All FHCS heads and magnets should be flush, to avoid hard-to-diagnose rubs.
- * Using a multimeter, ensure an electrical connection from screw head to screw head.  You should see near-zero resistance.
+ * Using a multimeter, ensure an electrical connection from Maxwell metal pin to metal pin.  You should see near-zero resistance.
 
 ### Plate
 
-TODO: add plate pic/render; exploded diagram?
+| ![](Renders/Plate_MGN9H_Front_Iso.png) | ![](Renders/Plate_MGN9H_Rear_Iso.png) |
+| --- | --- |
+| Front | Rear |
 
-TODO: show pic of parts required for carriage build.
+TODO: show pic of parts required for plate build.
 
 * Prep
  * Clear any elephant foot for magnet holes with a countersink bit.
- * Match-fit the upper Maxwell coupling screw hole by overtorquing with an M3 screw.
+ * Match-fit the upper Maxwell coupling screw hole by overtorquing with an M3 screw, then remove it.
  * Setup the 3 Maxwell BHCSes:
    * For the upper, use an M3 nut, typically 2.2-2.4mm in thickness; measure what you have first.  Using pliers and a straight allen wrench, lock the nut to the end of the button head.  The screw length will depend on your toolhead choice.
    * You want to match the thickness of the two lower maxwell screw assemblies to the upper.  Measure the thickness of your crimp terminals (typically 0.3mm to 0.8mm) and use either jam nuts (typically 1.8mm thick) or stacked 6mm-OD 3mm-ID washers to get as close as possible to 2.2mm thick, but not lower, and as matched as possible.  0.2mm mismatch is OK; the docks and the printer will be fine with a tiny bit of misalignment.
- * Heat-press 2x heatsets for the toolhead screws and ensure they’re flush.
- * Heat-press the 2x heatsets for the Maxwell coupling.  Both sides are OK; insert them through the bed side for now, as despite being the "wrong way" to resist pullout, pullout forces are low here, and the from-bed-push orientation means more of the heatset will be in contact with the crimp terminals.
-* Add magnets:
+ * Heat-press the 2x heatsets for the toolhead screws and ensure they’re flush.
+ * Heat-press the 2x heatsets for the Maxwell coupling, through the print-bed side.  Despite being the "wrong way" to resist pullout, pullout forces are low here, and the orientation means more of the heatset will be in contact with the crimp terminals, for a better electrical connection.
+* Add magnets
  * In this step, you'll use the carriage to ensure the correct polarity of magnets on the plate.
  * Add one magnet to the carriage.
  * Push the plate into the carriage, so this magnet is mostly inserted.
  * Repeat with all remaining magnets.
  * Fully insert all magnets until flush, using a pliers wrench, small vise, or against a flat surface.
 * Continue, following the same steps as the carriage:
- * Add upper nuts (3x)
+ * Add magnet-retention-FHCS nuts (3x)
  * Add magnet-retention FHCSes (3x)
 * Feed wire into position
- * Figure out which side you want the wires to go.
- * Trim one wire side slightly and have it go straight down, through the vertical slot, to where it can enter the screw/nut area.
- * Route the other wire through the 3 tunnels.  Adjust the length of the short or long wire to match; both should just touch the bottom brace.
+ * Figure out which side you want the wires to go, remembering that the plate will be flipped.
+ * Trim one wire side slightly shorter, and feed it straight down, through the vertical slot, to where it can enter the screw/nut area.
+ * Route the other end of the wire through the 3 tunnels.  Adjust the length of the short or long wire to match; both should just touch the bottom brace.
  * Strip both wire ends 6-8mm, or whatever length works best for your crimp terminals.  Need more length?  Pull it through.   Excess may be taken up at the toolhead.
 * Add electrical-wire connections
  * Using the crimp tool, crimp the ring terminals to the wires.
  * Put the crimps in place, with the thick part facing into the cutout, and for each, add the M3x8 BHCS-nut assembly and fully tighten.
+ * Strip the upper ends a few mm - just enough to connect to the multimeter.
 * Test
- * Look at the plate, with a light source behind it.  You should see a fraction of a millimeter, all over.  All FHCS heads and magnets should be flush, to avoid hard-to-diagnose rubs.
- * Using a multimeter and touching the lower Maxwell screw heads, confirm that the toolhead + plate combo has continuity in the default position and doesn’t when you press up gently.
+ * Put the plate on the carriage, gently.  DO NOT let them click hard into place.  You can damage the soft screw heads.
+ * Look at area between plate and carriage, from the side, with a light source behind.  You should see a fraction of a millimeter, all over.  All FHCS heads and magnets should be flush.  If you can see the screw heads or magnets popping out even slighty, fix them to be flush, to avoid hard-to-diagnose issues from rubs.
+ * Using a multimeter, touch the lower Maxwell screw heads, confirm that the toolhead + plate combo has continuity in the default position and doesn’t when you press up gently on the plate.
  * The “Maxwell coupling switch” here should have a discrete, clicky feel, and return into position reliably.  If it’s mushy, you need to find the rub and fix it, or find the loose part.
 * Lockdown
-  * ⚠️Threadlocker on the top Maxwell screw is a smart choice - Yeri and Zruncho have both experienced issues from this screw loosening over time.  Add it.
+  * ⚠️Threadlocker on ALL 3 Maxwell screws is a smart choice - Yeri and Zruncho have both experienced issues from screws loosening over time, from probing and attach/detach motions.  Add it.
 * Repeat steps above for each plate.
 
-### Pins
-TODO: add picture/render of pin
+### Pins and Belt Clips
 
+| ![](Renders/Clips_Front_Iso.png) | ![](Renders/Clips_Rear_Iso.png) |
+| --- | --- |
+| Front | Rear |
+
+**Pins**
 * Drill out 2x M3 heatsets using a 2.9mm or similar drill.  Get close to 2.95mm or so, and leave a small taper on the narrow side.
 * Using a small tabletop vice or pliers wrench, press heatsets into the flat end of 3mmx35 pins.  The wide end should align to the pin end, and be flush.
 
-### Belt Clips
+**Belt Clips**
 
-TODO: Exploded belt clip diagram here - show support to remove
-
-TODO: belt-path diagram
+TODO: belt-path diagram render or picture
 
 * Prep
  * Remove the tiny custom support for each belt clip, near the screw hole.  Clear the support area with an x-acto or flush cutters, if needed; you need the M3 t-nut to fit here.
 * Add M3 t-nut in place and then add M3 BHCS, keeping it as open as possible, but still holding the t-nut with at least two threads.
-* TODO: Add pic
 * Practice Install
  * Before going to your printer, get the feel for belt installation, with a piece of spare belt.
- * Feed the spare belt through the entrance and fold it back on itself and push it through.
+ * Feed the spare belt through the entrance with the teeth facing the front and fold it back on itself (where the teeth face each other) and push it through.
  * Adjust the positioning, a belt tooth at a time, to where maybe 2 teeth are exposed beyond the clip.
  * Drop the tube in, halfway, so it holds in place from the belt squeeze.
- * Repeat for the second belt, then press the tube in fully.
+ * Repeat for the second belt, then press the tube in fully.  Make sure they exactly match; if off by one tooth, you'll see a 1mm error where one belt tooth is half-shifted to the opposite side.
  * Fully tighten the M3 screw.
- * Push clip into carriage and press the pin in.  It will have more resistance than before, but shouldn’t require lots of force, or any tools.
+ * Push clip into carriage and press the pin down.  It should drop in with minimal-to-no force.
  * Repeat for other clip, for more practice.
  * Adding belt clips with tubes goes fast, once you get the hang of it!  SpeedClips can be adjusted in-place, which makes the initial setting faster.  It's how they got their name.
- * Tip: to have fast belt-clip reattachments or initial settings, using a metallic silver sharpie, mark the first visible tooth on the long (continuing) belt side.  Measure the number of teeth and use it as a reference for other belt ends; mark those to match, and it goes FAST.
+ * Tip: to have fast belt-clip reattachments or initial settings, using a metallic silver Sharpie, mark the first visible tooth on the long (continuing) belt side.  Measure the number of teeth and use it as a reference for other belt ends; mark those to match, and it goes FAST.
 * Real Install
  * Loosen the screw and ditch the practice belts, and repeat on the printer.  We’re doing this live.  Get excited!
 
 BEFORE messing with docks and toolchanging and all that config, get the damn thing printing and test the build quality!
 
 You now have a lighter-weight, lower-cost Tap replacement that enables painless nozzle swaps and maintenance.  You should only need to:
-* add crimp terminals and a crimp terminal housing to the plate for the toolhead board
-* update a pin in your Klipper config for the probe
-* add the carriage and clips
+* Add crimp terminals and a crimp terminal housing to the plate for the toolhead board
+* Update a pin in your Klipper config for the probe
+* Add the carriage and clips to the printer
+* Add grease to the metal pins for better longevity.
 
 Then you can test probing functionality, probe accuracy, and get updated resonace-testing results.  All those will confirm that you have a good build.
 
 What to expect:
 * Homing with the probe should just work, with some visible carriage motion.
-* The coupling should return to the connected position, reliably.
-* `PROBE_ACCURACY`: run with SAMPLES=100 to work it in, then do SAMPLES=10 and expect sub-0.01mm range and lower standard deviation (sub-.002mm).
+* The coupling should return to the connected position, reliably.  If it doesn't, you have too much friction or crappy magnets.
+* `PROBE_ACCURACY`: run with SAMPLES=100 to work it in.  Ignore what you're looking at; the grease and parts need to settle.
+  * Then do SAMPLES=10 and expect sub-0.01mm range and lower standard deviation (sub-.002mm).
 * `Z_TILT_ADUST` or `QUAD_GANTRY_LEVEL` should work fine, next.
-* Resonance testing should be as good or better than before; the head should be well-balanced and rigidly connected.
+* Resonance testing should be clean, and possibly much better than before; the head should be well-balanced and rigidly connected.  It took a lot of work to shift the head downward to improve balance and improve cooling flow.
 
-Before printing, make sure to update the Z offset for yur toolhead head... the offset will depend on your printer and the magnet configuration, but 0.5mm is a reasonable starting point.
+Before printing, make sure to update the Z offset for yur toolhead head... the offset will depend on your printer and the magnet configuration, but 0.4mm is a reasonable starting point.
 
 ### Toolhead and Docks
 
-Most MadMax toolheads use 3 or 4 M3 FHCSes sticking out, which slide into a dock, and are held by magnets, along with standard keyhole geometry.
+Most MadMax toolheads use 3 or 4 M3 FHCSes sticking out from the front, which slide into a dock, and are held by magnets, along with standard keyhole geometry.
 
 For each toolhead, add your 3-4x FHCSes, and measure the distance from the flat screw top to the flat toolhead surface with the tip of calipers. The magnets in the dock should be about 3mm inward from the flat surface, and you want to match this distance to maximize magnet grip.
 
-For each dock, add 3x-4x magnets from back, until they hit the lip, partially.
+For each dock, add 3x-4x magnets from back, until they hit the lip, partially.  
 
-TODO: porting notes or link.  Hopefully someone already made a dock for your printer in the support matrix.
+Check with your dock maker for any other instructions.
 
-BTW, you can add just one toolhead and test out docking and undocking if you’d like. You don’t actually need more than a shroud with a hotend and a toolhead plate to be connected; you can always add a plate extension core to the mainboard, before setting up the toolhead board, to play.
+BTW, you can add just one toolhead and test out docking and undocking if you’d like. You don’t actually need more than a shroud with a hotend and a toolhead plate to be connected; you can always add a plate extension cord to the mainboard, before setting up the toolhead board, to play.
 
 Continue to the [Configuration](Configuration.md) section next!
