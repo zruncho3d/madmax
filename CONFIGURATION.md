@@ -1,6 +1,6 @@
 ## Configuration
 
-Your main task is to install the Klipper toolchanger plugin, then copy over config chunks into toolhead-specific files and update a few pin config sections.  
+Your main task is to install the `klipper-toolchanger` plugin, then copy over config chunks into toolhead-specific files and update a few pin config sections.  
 
 If you already have toolhead-specific config files, this step should be easy.
 
@@ -8,17 +8,17 @@ You should not have to invent anything here!  You should only have to copy over 
 
 If you experience issues, check the [Troubleshooting](TROUBLESHOOTING.md) page first.
 
-### Install klipper-toolchanger
+### Install `klipper-toolchanger`
 
 * Always start from a hardware setup which has functional XYZ homing. Everything below assumes that.
  * You already tested homing, right?
-* Install Viesturz’ klipper-toolchanger
-  * SSH to your Klipper system, then install the klipper-toolchanger code:
+* Install Viesturz’ `klipper-toolchanger`
+  * SSH to your Klipper system, then install the `klipper-toolchanger` code:
 ```
 wget -O - https://raw.githubusercontent.com/viesturz/klipper-toolchanger/main/install.sh | bash
 ```
   * Klipper should restart without issue.
-  * As best practice, enable easy updates: add this chunk to Moonraker.conf and restart Klipper when prompted:
+  * To enable easy updates: add this chunk to Moonraker.conf and restart Klipper when prompted:
 ```
 [update_manager klipper-toolchanger]
 type: git_repo
@@ -36,7 +36,7 @@ install_script: install.sh
  * `klipper-toolchanger/*` ← MadMax-specific sample configs for each toolhead; a starting point.
  * `macros.cfg`
 * Backup your `printer.cfg` file.
-* Copy over the bed mesh section below to `printer.cfg`, if you don’t already have this section; this appears to be a bug in klipper-toolchanger.  (TODO: check if still present; report if so)
+* Copy over the bed mesh section below to `printer.cfg`, if you don’t already have this section; this appears to be a bug in klipper-toolchanger.
 ```
 # klipper-toolchanger expects this section to be present.
 [bed_mesh]
@@ -67,7 +67,7 @@ probe_count: 3, 3
 * (If using an endstop sensor/switch) Modify `klipper-toolchanger/homing.cfg`’s `[homing_override]` section so that:
  * `#_SENSORLESS_HOME_X` → `G28 X`
  * `#_SENSORLESS_HOME_Y` → `G28 Y`
-* Comment out any `[homing_override]`` section you probably have in `printer.cfg`, as it will override this one, which initializes the toolchanger code.
+* Comment out any `[homing_override]` section you probably have in `printer.cfg`, as it will override this one, which initializes the toolchanger code.
 * Enable forced moves in `printer.cfg` to support the use of `SET_KINEMATIC_POSITION`:
 ```
 [force_move]
@@ -78,38 +78,40 @@ enable_force_move: true
 ### Initial Testing
 
 * In Mainsail, ensure:
- * the head probe pin still shows triggered when pressed
- * endstops still trigger when pressed (especially X endstop)
-* Make sure a defined head is physically connected, as the klipper-toolchanger configuration assumes this! Otherwise, you get a failure to initialize the toolchanger when doing `G28` the first time after klipper restart, and then you have to restart Klipper.
+ * The head probe pin still shows triggered when pressed
+ * Endstops still trigger when pressed (especially X endstop)
+* Make sure a defined head is physically connected, as the `klipper-toolchanger` configuration assumes this! Otherwise, you get a failure to initialize the toolchanger when doing `G28` the first time after klipper restart, and then you have to restart Klipper.
 * Optionally, use the probe as the virtual Z endstop
- * TODO - add notes
+ * TODO - add notes for a virtual Z endstop configuration
 * Home (`G28`) should succeed.  That’s a good first step.
-* Verify the build with `PROBE_ACCURACY`.
-* Verify `Z_TILT_ADJUST` or `QUAD_GANTRY_LEVEL` and set params to match; before running those:
- * If you previously used Klicky or another probe with an offset, ditch any macros, as you now have a zero-offset probe.
- * A good tolerance for ZTA or GL is 0.01 for direct-drive setups, or .0075 for geared or leadscrew-driven setups with higher Z resolution.
+* Verify the build hasn't changed, with `PROBE_ACCURACY`.
+* Prepare for a `Z_TILT_ADJUST` or `QUAD_GANTRY_LEVEL` run:
+  * Change your bed positions for `Z_TILT_ADJUST` or `QUAD_GANTRY_LEVEL` probing, as needed.
+  * If you previously used Klicky or another probe with an offset, ditch any macros, as you now have a zero-offset probe.
+  * A good tolerance for ZTA or QGL is 0.01 for direct-drive setups, or .0075 for geared or leadscrew-driven setups with higher Z resolution.
+* Run `Z_TILT_ADJUST` or `QUAD_GANTRY_LEVEL` twice.
 
 #### Align Docks to Frame and Toolhead
-Note that everything here assumes that you’re using identical toolheads with identical builds.
-* Confirm head-dock physical alignments
- * Power off the printer and bring the head forward, near the docks.
- * Ensure alignment of the front face about the X axis; the front face should be vertical, parallel to the frame.
+Note that everything here assumes that you’re using identical toolheads with identical builds.   Also, this step will depend on your dock author - for V0 docks for OB and DB toolheads, expect the front of the head to align to the front of the frame.
+
+* Confirm toolhead-to-dock physical alignment
+ * Power off the printer and bring the head forward, near the docks, or run `M18` to disable steppers.
+ * Ensure alignment of the front toolhead face about the X axis (or whatever the dock author suggests); the front face should be vertical, parallel to the frame.
    * If there is any twist about the X axis (“head nod”), you may not get reliable toolchanging.
      * To adjust this angle, you can add a washer or shim on top or bottom.  However, increasing the magnet gap will reduce the magnetic force, so you may want to increase the magnetic force to counteract this.
-     * This step will depend on your dock author.  For V0 docks for OB and DB toolheads, expect the front of the head to align to the front of the frame.
- * Ensure head-dock vertical alignment: with head near the dock, shift the dock up/down to get the FHCes centered in the holes.  A flashlight or phone light may help.  Lock those screws.
+ * Ensure toolhead-to-dock vertical alignment: with head near the dock, shift the dock up/down to get the FHCes centered in the holes.  A flashlight or phone light may help.  Crank those screws now, and retighten them after a heat cycle, too.
 
 #### Calibrate Docking Positions
 
-TODO: This section sucks.  It needs clear diagrams and it'll be MUCH easier to understad.  I'll work on that soon.  These names are all subject to change.
+TODO: Note - This section sucks.  It needs clear diagrams and it'll be MUCH easier to understand. These names are all subject to change.
 
 TOOD: Pic, showing designed-in misalignment values, in each dimension
 
-TODO: add reference pic showing values here, and table with values.
+TODO: Reference pic showing alignment values in table.
 Front view: park_x, detach_X
 Top view: close_y, attach_y, safe_shuttle_y, safe_toolhead_y
 
- * NOTE: The stock cutter (which is in the CAD history for the Fusion dock file, and defines the dock geometry) enables about 1mm adjustment error in any direction; this is actually quite forgiving.
+NOTE: The stock cutter (which is in the CAD history for the Fusion dock file, and defines the dock geometry) enables about 1mm adjustment error in any direction; this is actually quite forgiving.
 Read below; find the values in the next section.
 
 For reference, each toolhead has `params_park_x` and `params_detach_x`.  You’ll need to modify the values in the local `klipper-toolchanger/toolhead_*.cfg` files.  For example, in `toolhead_0.cfg`:
@@ -134,7 +136,7 @@ params_path_speed: 900 # Was 1500
 
 For the provided configs, T0 is on the left, as you look at the printer, in the minus-X direction; T1 is on the right.  For all the params below, align visually.  Doesn’t need to be perfect.
 
-TODO: Update/remove text to reference diagram.
+TODO: Update/remove text to reference toolchanger params diagram.
 
 ##### Setup T0
  * Turn the printer back on.
@@ -211,30 +213,30 @@ TODO: Update/remove text to reference diagram.
  * Almost there!
 
 #### Prepare for Printing
-* If you haven’t already… upgrade your PSU, or limit power, if needed.  A regular V0 will need a bump, or a switch to AC bed to free up available power, with an added head. Measure the power at the outlet with an inline power meter (like a Watt’s Up) if you’re not sure.
+* If you haven’t already… upgrade your PSU, or limit power, if needed.  A regular V0 will need a bump, or a switch to an AC bed to free up available power, with an added head. Measure the power at the outlet with an inline power meter (like a Watt’s Up) if you’re not sure.
  * Zruncho says: I always watch power while making big printer changes because it can quickly catch many errors.
  * Watch out for the effects of all that extra power in a small space.  Watch chamber temps and make sure that the higher chamber temp doesn't create heat-creep or parts-getting-loose issues.
 * Re-calibrate your Z offset.
- * When calibrating z_offset, note that these values are now saved individually in the respective toolhead(n).cfg and cannot be saved with SAVE_CONFIG (as that function can only write to `printer.cfg`).
+ * When calibrating z_offset, note that these values are now saved individually in the respective `toolhead(n).cfg` and cannot be saved with `SAVE_CONFIG` (as that function can only write to `printer.cfg`).
  * You need to calibrate the Z offset of each toolhead that you want to home Z with. A typical setup is to calibrate the Z offset of T0 only and use that one always for homing.
- * The z_offset found in printer.cfg will still be applied as well! So either remove that, or if you will only ever home with T0 then set the z_offset for each toolhead to 0 and then you can continue to simply use the value found in printer.cfg.
+ * The z_offset found in `printer.cfg` will still be applied as well! So either remove that, or if you will only ever home with T0 then set the z_offset for each toolhead to 0 and then you can continue to simply use the value found in `printer.cfg`.
 * Update ZTA or QGL points to a safe default, assuming both heads are present.   You don't want one head to hit the other during the print start.
 * If you want to print with T0, you’re probably done with the config side. Do a quick print with T0. It’s a good test.
-* Note - there’s a toolchanger_1_as_primary.cfg file, which is similar to toolchanger_0, but pretends to be Tool 0.  You can use this to not have to change anything, including the slicer.  Do a quick print with just T1 acting as T0. The only change is the tool number, as klipper-toolchanger doesn’t want just tool 1 defined.
+* Note - there’s a `toolchanger_1_as_primary.cfg` file, which is similar to toolchanger_0, but pretends to be Tool 0.  You can use this to not have to change anything, including the slicer.  Do a quick print with just T1 acting as T0. The only change is the tool number, as `klipper-toolchanger` doesn’t want just tool 1 defined.
 * Do your PID tuning, EM, and PA for each new head.
- * Again, after running the calibrations you will have to manually enter the determined values into the respective toolhead(n).cfg.
-* If you want to do your first multi-extruder print (or just print with another toolhead than the one you homed Z with), you will need the offsets between the tools. Klipper-toolchanger calls these gcode_offsets, they have to be set in toolhead_n.cfg as well. Set one toolhead (typically T0) to zero offset for all three axis. It’s recommended to measure the offsets of the other toolhead(s) with Nudge. However, you can also do this by other means. It’s possible to calibrate the offsets manually. It will be less accurate but can get you printing quickly. You can use a feeler gauge to determine the gcode_z_offset: Adjust z_offset until you feel resistance in Mainsail's 0.005 increments. Swap toolheads and adjust again, compare values. Alternatively it’s possible to calibrate z_offset for either toolhead and then use the difference as the gcode_z_offset. For X and Y there are calibration prints available: [example](https://www.printables.com/model/129617-offset-xy-dual-extruder-idex-calibration).
+ * Again, after running the calibrations you will have to manually enter the determined values into the respective `toolhead(n).cfg`.
+* If you want to do your first multi-extruder print (or just print with another toolhead than the one you homed Z with), you will need the offsets between the tools. `klipper-toolchanger` calls these gcode_offsets, and they must be set in `toolhead_n.cfg`. Set one toolhead (typically T0) to zero offset for all three axis. It’s recommended to measure the offsets of the other toolhead(s) with Nudge. However, you can also do this by other means. It’s possible to calibrate the offsets manually. It will be less accurate but can get you printing quickly. You can use a feeler gauge to determine the gcode_z_offset: adjust z_offset until you feel resistance in Mainsail's 0.005 increments. Swap toolheads and adjust again, compare values. Alternatively it’s possible to calibrate z_offset for either toolhead and then use the difference as the gcode_z_offset. For X and Y there are calibration prints available: [example](https://www.printables.com/model/129617-offset-xy-dual-extruder-idex-calibration).
 * THEN, really tweak the macros and test those.  The iteration speed will be slower, so you don’t want to be messing with the basics.
 * Modify your `PRINT_START`, `PRINT_END`, `PAUSE`, `RESUME`, and other custom macros as needed.  Sample in `macros.cfg`.
 
 #### Add Nudge
-* Follow instructions from the [Nudge repo](https://github.com/zruncho3d/nudge) to build, install, configure, and measure.  Should be easy enough.  Get repeatability values with printer-experiments if you can.
- * You don’t need to run a nudge calibration before every print. You only need to use it when changing the tool setup (e.g. replacing a nozzle or toolhead). If you don’t have any overtravel, use one of the magnetic nudge bases to temporarily place the nudge on the printer bed.
- * In a two-toolhead system, `NUDGE_FIND_TOOL_OFFSETS` will produce a single set of values. These are the offsets for T1 relative to T0. Leave these values unconfigured in the T0 configuration, and include the values provided by nudge in the t1 configuration.
+* Follow instructions from the [Nudge repo](https://github.com/zruncho3d/nudge) to build, install, configure, and measure.  Should be easy enough.  Get repeatability values with code from the `printer-experiments` repo if you can (more on this in the Nudge repo).
+ * You don’t need to run a Nudge calibration before every print. You only need to use it when changing the tool setup (e.g. replacing a nozzle or toolhead). If you don’t have any overtravel, use one of the magnetic nudge bases to temporarily place the nudge on the printer bed.
+ * In a two-toolhead system, `NUDGE_FIND_TOOL_OFFSETS` will produce a single set of values. These are the offsets for T1 relative to T0. Leave these values unconfigured in the T0 configuration, and include the values provided by nudge in the T1 configuration.
 
 #### Print Tests
 * Put your badass toolchanger to work.
-* [TODO - add sample flexes that, hey, you made a toolchanger]
+* [TODO - add sample flexes that say, hey, you made a toolchanger]
  * Tiny Panda - Rob used this one
  * Two-color tagged Voron Cube
  * MadMax poker chip to be designed?

@@ -12,6 +12,8 @@ Only then, should you proceed to the dock-side hardware and other software confi
 
 You can do it!
 
+If you experience issues, check the [Troubleshooting](TROUBLESHOOTING.md) page first.
+
 ### Print Settings
 
 Regular Voron **toolhead** considerations (materials and printing) apply here, as critical parts are millimeters away from a heated bed.  They will be subjected to high heat, and you want them as resilient as possible.
