@@ -109,7 +109,7 @@ All parts are easy and fast to print, with no large overhangs, no large bridges,
 
 Here's a full plate for the MadMax core parts for a conversion:
 
-![](Renders/plate.png)
+![](Renders/Plate.png)
 
 To this plate, you would add printer-specific toolheads and docks.
 
