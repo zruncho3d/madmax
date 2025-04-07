@@ -1,6 +1,6 @@
 # The Story of MadMax
 
-TODO: spend the time to really fill this in, with pictures and videos from the archives.
+TODO: spend the time to really fill in the Story of MadMax, with pictures and videos from the archives.
 
 This started as a desk toy to play around with push-push latches and Maxwell couplings, following a chat with Jon at Proper Printing at OpenSauce 2023 (~June 2023).
 
