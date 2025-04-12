@@ -26,7 +26,7 @@ TODO: finish Beta member table with standard front views, parts examples, and de
 | Caza's Metal Micron (MM.007) |  | |
 | Yeri's SF 160 (MM.008) |  | |
 | Sam's V0.2 120mm +30X (MM.009) |  | |
-| r2pdx's Micron 180 (MM.010) | ![](Images/Builds/r2pdx_10_front_1920.jpg) | ![](Images/Builds/r2pdx_10_part_1080.jpg) | Micron 180r1, 2x Anthead toolheads with modified ducts and WWG2 extruders, Nudge, gantry-mounted docks by r2pdx (also tested frame mounted docks).<br><br>On its way to becoming doomed! |
+| r2pdx's Micron 180 (MM.010) | ![](Images/Builds/r2pdx_10_front_1920.png) | ![](Images/Builds/r2pdx_10_part_1080.jpg) | Micron 180r1, 2x Anthead toolheads with modified ducts and WWG2 extruders, Nudge, gantry-mounted docks by r2pdx (also tested frame mounted docks).<br><br>On its way to becoming doomed! |
 
 Learn more from videos:
 * [Canuck Creator interviews Ambrosia](https://www.youtube.com/watch?v=dB9FqNF6or0&t=164s) - with a MadMax Trident
