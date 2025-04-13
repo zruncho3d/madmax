@@ -5,7 +5,7 @@ This started off with a discussion with Jon (from the awesome Proper Printing YT
 | ![](Images/Desk_Toy.jpg) | ![](Images/Desk_Toy_2.jpg) |
 | --- | --- |
 
-A Maxwell coupling is a special kind of coupling - [a kinematic coupling](https://en.wikipedia.org/wiki/Kinematic_coupling) - that effectively guarantees repeatable alignment, which makes it a great choice for system which need to attach and detach a head frequently.  A Maxwell coupling is one type of coupling which uses balls and pins; read the [Wikipedia page](https://en.wikipedia.org/wiki/Kinematic_coupling) if you haven't already.
+A Maxwell coupling is a special kind of coupling - [a kinematic coupling](https://en.wikipedia.org/wiki/Kinematic_coupling) - that effectively guarantees repeatable alignment, which makes it a great choice for systems which need to attach and detach a head frequently.  A Maxwell coupling uses balls and pins; read the [Wikipedia page](https://en.wikipedia.org/wiki/Kinematic_coupling) if you haven't already.
 
 This toy is trying out multiple ideas: a magnetic-only Maxwell coupling (with no positive lock), as well as push-push latches as a dock mechanism.  Simple and fun... but there was a big Q: will the head stay on, or get flung off?
 
@@ -37,11 +37,11 @@ The simplest design actually seemed to work - ferrous FHCS grabbed by tiny magne
 
 Then around Nov 2023, it became clear that the toolchanger wasn't the most valuable thing to work on.  
 
-Say you build a toolchanger with this... or really anything with two heads... how will you do nozzle alignment?  I knew that the pain of a TC for nozzle alignment would shared with IDEX, DG (Dual Gantry), and other two-head printer types, and it was the core reason I had built those but never used them.  In fact, for [Double Dragon](https://github.com/zruncho3d/double-dragon) - a V0 IDEX (!), I used it for a grand total of two months, before it went back to its cave, because I feared the pain of manual vernier calibration prints.  For [Dueling Zero](https://github.com/zruncho3d/DuelingZero) I only used one head in practice.
+Say you build a toolchanger with this... or really anything with two heads... how will you do nozzle alignment?  I knew that the pain of a TC for nozzle alignment would be shared with IDEX, DG (Dual Gantry), and other two-head printer types, and it was the core reason I had built those but never used them.  In fact, for [Double Dragon](https://github.com/zruncho3d/double-dragon) - a V0 IDEX (!), I used it for a grand total of two months, before it went back to its cave, because I feared the pain of manual vernier calibration prints.  For [Dueling Zero](https://github.com/zruncho3d/DuelingZero) I only used one head in practice.
 
 Calibration is work.  Design is fun.  You can guess which one I, and most people, prefer.
 
-That led to Nudge as a MadMax spinoff... spend 100+ hours to save a 10-minute calibration print :smile.  Here's what it looks like, in the released form... on an early MadMax that almost nobody knew about.
+That led to Nudge as a MadMax spinoff... spend 100+ hours to save a 10-minute calibration print :smile:.  Here's what it looks like, in the released form... on an early MadMax that almost nobody knew about.
 
 ![](Videos/Probing.gif)
 
@@ -49,9 +49,9 @@ If you're curious, check out the [Nudge repo](https://github.com/zruncho3d/nudge
 
 ![](Images/prototypes.jpg)
 
-Anyway, back to MadMax.  I wanted to test the attach/detach motion, which required an actual magnetic maxwell.  Here we go:
+Anyway, back to MadMax.  I wanted to test the attach/detach motion, which required an actual magnetic Maxwell.  Here we go:
 
-![](Images/Early_core.jpg)
+![](Images/Early_Core.jpg)
 
 Note that the balls are on the carriage and the pins on a plate, which attaches to each head.  The big design flaw this exposed is that you want the magnets higher-up, to better counteract the torque of the head.
 
@@ -65,7 +65,7 @@ OK, we can work with this.  A few versions, trying out different magnet placemen
 | ![](Images/Front_Mount_Attached.jpg) | ![](Images/Front_Mount_Attached_2.jpg)  | ![](Images/Front_Mount_Attached_3.jpg) |
 | --- | --- | --- |
 
-What I didn't like was that when the head would pull away, it separate from the plate, but then get pulled back in with a somewhat-loud clunk.  So I tried out a gentler attach and detach, with a magnetic-suspension "pusher plate" that would remove motion after detachment, as well as quiet it down:
+What I didn't like was that when the head would pull away, it would separate from the plate, but then get pulled back in with a somewhat-loud clunk.  So I tried out a gentler attach and detach, with a magnetic-suspension "pusher plate" that would remove motion after detachment, as well as quiet it down:
 
 ![](Images/Front_Mount_Pusher_Plate.jpg)
 
@@ -105,7 +105,7 @@ I needed a way to do probing, and had been messing around with plastic for that,
 
 The next change was to flip the orientation.  A few thoughts drove this:
 * 3 screws are cheaper for each head than 6 pins and easier to build.
-* You want the largest maxwell coupling area possible, for better stability.  Using the 3rd screw of a MiniSB mount at the top helps.
+* You want the largest Maxwell coupling area possible, for better stability.  Using the 3rd screw of a MiniSB mount at the top helps.
 
 Here's the comparison.
 
@@ -179,7 +179,7 @@ I looked at the detached head:
 
 You see the issue?  Yeah, in a hot chamber (from my first long two-extruder print), all that heat in that tiny space meant that the plastic around the magnet relaxed, and it popped out.
 
-So the next day at OpenSauce, I showed the coupling and asked everyone I saw - "how would you solve this?" - and got something like 20 unique answers, some hilariously impractical, and some straightforward and good.  It ranges from Tom Sanladerer's suggestion of special metal-plastic glues, to using magnet wire, to putting a bigger magnet on one side.
+So the next day at OpenSauce, I showed the coupling and asked everyone I saw - "how would you solve this?" - and got something like 20 unique answers, some hilariously impractical, and some straightforward and good. Answers ranged from Tom Sanladerer's suggestion of special metal-plastic glues, to using magnet wire, to putting a bigger magnet on one side.
 
 ![](Images/Voron_Booth.jpg)
 
@@ -200,11 +200,11 @@ Lots of testing later from the beta team, and the focus had moved to long-term r
 
 The set screws holding in the wires - used for head detection through the plate, for the toolchanger firmware - would come loose with time.  Same issue as Poke... metal into plastic is bad in a hot chamber.
 
-At this point, many of us in the beta were doing Maxwell probing, where the coupling itself is the probe sensor, as it slides up, and the pins and screw heads break their connections.  Surprisngly, you can get triple-zero probing here.
+At this point, many of us in the beta were doing Maxwell probing, where the coupling itself is the probe sensor, as it slides up, and the pins and screw heads break their connections.  Surprisngly, you can get triple-zero probing here - 0.000x mm Std Dev - which is vastly better than needed.
 
-But, that probing wasn't perfectly reliable over time.  You want to carefully set magnet forces, because if you increase the force, potentially you get a better coupling, but potentially at the expense of higher probe forces, which may hurt repeatability.  Without numbers, it's all guesswork. That little gap also affects force, heavily.
+But, that probing wasn't perfectly reliable over time.  There's a tradeoff which affects probing reliability.  If you increase the magnet force, potentially you get a better coupling, but potentially at the expense of higher probe forces, which may hurt repeatability.  Without numbers, it's all guesswork. That little gap also affects force, heavily.  What should it be?
 
-A MadMax spinoff was a load-cell-based magnet tester, which could be put into a printer to measure the drop-off in magnet forces, as the temp rises:
+The next MadMax spinoff was a load-cell-based magnet tester, which could be put into a printer to measure the drop-off in magnet forces, as the temp rises:
 
 ![](Images/Magnet_Tester.jpg)
 
@@ -230,7 +230,7 @@ Here's an example graph:
 
 ... and that's why we spec Acetal (POM).  Low friction, high durability.  Less probe force than metal pins; not as soft as Teflon (PTFE), which deforms quickly from magnet forces.
 
-I could even measure magnet forces from probing, to quantify the effect of gap changes and other things.  That required some upgrades to the tester, to move from flexy V-wheel on V-Slot, to parallel MGN9 rails:
+I could even measure magnet forces from probing, to quantify the effect of gap changes and other things.  That required some upgrades to the tester, to move from flexy V-wheels on V-Slot extrusions, to parallel MGN9 rails:
 
 | ![](Images/Rollers_To_Rails.jpg) | ![](Images/Probe_Tester.jpg) |
 | --- | --- |
