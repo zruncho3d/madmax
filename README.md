@@ -18,7 +18,7 @@ TODO: finish Beta member table with standard front views, parts examples, and de
 | --- | ---- | ---- | ---- |
 | Zruncho's T0 120 (MM.000) | ![](Images/Builds/zruncho_0_front_1920.jpg) |  ![](Images/Builds/zruncho_0_part_1080.jpg) | Tri-Zero+BoxZero, Vampire Bat, Nudge, custom rear-shift bed parts, OmniBrick heads, PapLite belt extruders, docks + brushes/blockers by Zruncho.<br><br>The original!|
 | Rob's V0 120 (MM.001) |  | |
-| andrewcgr's VT 350 (MM.002) |  | |
+| andrewcgr's VT 350 (MM.002) | ![](Images/Builds/andrew_2_front.jpg) | ![](Images/Builds/andrew_2_part.jpg) | Trident 350, 2x A4T, 2x Sherpa Mini, TMC 4671 closed-loop servo XY drives on 48 V, BFI, Cartographer. Docks, brushes, carriage, XOL-compatible plates by Andrew |
 | Ambrosia's Metal VT (MM.003) |  | |
 | Telxoid's Tridex 250 (350 wide) (MM.004) | ![](Images/Builds/telxoid_4_front_1920.jpg)  | ![](Images/Builds/telxoid_4_part.png) | Tridex, 2x A4TBrick, 2x PapLite belt extruders, docks + brushes/blockers by Telxoid.  <br><br>Tridex conversion running y-assist CoreXY kinematics!
 | Max's HX9 120 (MM.005) |  | |
