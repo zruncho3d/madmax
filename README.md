@@ -25,6 +25,7 @@ TODO: table with GIFs covering the main steps - ideally all perfect loops, all v
 | Yeri's SF 160 (MM.008) | ![](Images/Builds/yeri_8_front_1920.jpg) | ![](Images/Builds/yeri_8_part_1920.jpg) | Salad Fork docks by Yeri, DragonBrick heads by Rob, G2Z extruders.<br><br> Nice example of wrap-around dock style! |
 | Sam's V0.2 120mm +30X (MM.009) | ![](Images/Builds/sam_9_front_1920.jpg) | ![](Images/Builds/sam_9_part_1920.jpg) | Docks by Rob, DragonBrick heads by Rob, LGX Lite extruders, customized Vampire Bat gantry by Sam.  <br><br>Extra wide! |
 | r2pdx's Micron 180 (MM.010) | ![](Images/Builds/r2pdx_10_front_1920.png) | ![](Images/Builds/r2pdx_10_part_1080.jpg) | Micron 180r1, AntHeads with modified ducts and WWG2 extruders, Nudge, gantry-mounted docks by r2pdx (also tested frame mounted docks).<br><br>On its way to becoming doomed! |
+| Yell's [Ender3-to-Trident-conversion](https://github.com/yell3D/Ender3dent) (MM.011) | ![](Images/Builds/yell_11_front_1920.jpg) |![](Images/Builds/yell_11_part_1920.jpg) | E3dent without BOM Frame (mistake) running E3 innards, AntHeads, GBB15 gantry board/CAN bridge.  Docks, bucket & brush by Yell.<br><br>Crossbar-based dock shows how to go beyond 2 heads!|
 
 Learn more from videos:
 * [Canuck Creator interviews Ambrosia](https://www.youtube.com/watch?v=dB9FqNF6or0&t=164s) - with a MadMax Trident
@@ -87,7 +88,7 @@ MadMax is more than just the core and dock interfaces; already, **it is an entir
 | Carriages | Belt Configs | Toolheads (core only) | Toolheads (to docks) | Printers |
 | --- | --- | --- | --- | --- |
 | 2 | 3 | 4+ | 7+ | Lots |
-| MGN9H<br>MGN12H | 6mm w/3mm sep<br>6mm w/3mm sep<br>9mm w/4mm sep| MiniSB<br>OmniBurner<br>DragonBurner<br>RapidBurner<br>A4T<br>XOL | DragonBrick<br>RapidBrick<br>AntHead<br>A4T<br>A4TBrick<br>OmniBrick<br>XOL<br> |  Voron Trident<br>Voron Zero<br>Micron<br>Salad Fork<br>Tri-Zero<br>Pandora's Box<br>
+| MGN9H<br>MGN12H | 6mm w/3mm sep<br>6mm w/3mm sep<br>9mm w/4mm sep| MiniSB<br>OmniBurner<br>DragonBurner<br>RapidBurner<br>A4T<br>XOL | DragonBrick<br>RapidBrick<br>AntHead<br>A4T<br>A4TBrick<br>OmniBrick<br>XOL<br> |  Voron Trident<br>Voron Zero<br>Micron<br>Salad Fork<br>Tri-Zero<br>Pandora's Box<br>[E3-to-Trident-conversion](https://github.com/yell3D/Ender3dent) |
 
 If you don’t see your printer in the list below, adding it tends to be straightforward.
 
