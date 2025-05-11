@@ -12,21 +12,19 @@ TODO: table with GIFs covering the main steps - ideally all perfect loops, all v
 
 **MadMax is currently in active beta**, with over 10 builds doing reliable two-head prints:  
 
-TODO: finish Beta member table with standard front views, parts examples, and descriptions
-
 | Printer | Image | Sample | Description |
 | --- | ---- | ---- | ---- |
-| Zruncho's T0 120 (MM.000) | ![](Images/Builds/zruncho_0_front_1920.jpg) |  ![](Images/Builds/zruncho_0_part_1080.jpg) | Tri-Zero+BoxZero, Vampire Bat, Nudge, custom rear-shift bed parts, OmniBrick heads, PapLite belt extruders, docks + brushes/blockers by Zruncho.<br><br>The original!|
-| Rob's V0 120 (MM.001) |  | |
-| andrewmcgr's VT 350 (MM.002) | ![](Images/Builds/andrew_2_front.jpg) | ![](Images/Builds/andrew_2_part.jpg) | Trident 350, 2x A4T, 2x Sherpa Mini, TMC 4671 closed-loop servo XY drives on 48 V, BFI, Cartographer. Docks, brushes, carriage, XOL-compatible plates by Andrew |
-| Ambrosia's Metal VT (MM.003) |  | |
-| Telxoid's Tridex 250 (350 wide) (MM.004) | ![](Images/Builds/telxoid_4_front_1920.jpg)  | ![](Images/Builds/telxoid_4_part.png) | Tridex, 2x A4TBrick, 2x PapLite belt extruders, docks + brushes/blockers by Telxoid.  <br><br>Tridex conversion running y-assist CoreXY kinematics!
-| Max's HX0 120 (MM.005) | ![](Images/Builds/runningsystemchanger_5_front.jpeg) | ![](Images/Builds/runningsystemchanger_5_part1.jpeg) | HX0+B0, Vampire Bat, 2x DragonBricks, 2x PapLite HBG2.0xTBG (slim version) modified for four point connection with DB8 extruder mount and side-mounted THB for maximized Y travel. Bed moved 10mm to the rear on HammerHead bed with permanently mounted Nudge and A1 mini nozzle brushes.|
-| Rob's VT (MM.006) |  | |
-| Caza's Metal Micron (MM.007) |  | |
-| Yeri's SF 160 (MM.008) |  | |
-| Sam's V0.2 120mm +30X (MM.009) |  | |
-| r2pdx's Micron 180 (MM.010) | ![](Images/Builds/r2pdx_10_front_1920.png) | ![](Images/Builds/r2pdx_10_part_1080.jpg) | Micron 180r1, 2x Anthead toolheads with modified ducts and WWG2 extruders, Nudge, gantry-mounted docks by r2pdx (also tested frame mounted docks).<br><br>On its way to becoming doomed! |
+| Zruncho's T0 120 (MM.000) | ![](Images/Builds/zruncho_0_front_1920.jpg) |  ![](Images/Builds/zruncho_0_part_1920.jpg) | Tri-Zero+BoxZero, Vampire Bat, Nudge, custom rear-shift bed parts, OmniBrick heads, PapLite belt extruders, docks + brushes/blockers by Zruncho.<br><br>The original!|
+| Rob's V0 120 (MM.001) | ![](Images/Builds/rob_1_front_1920.jpg) | ![](Images/Builds/rob_1_part_1920.png) | Voron Zero, Vampire Bat, DragonBricks, V0 docks by Rob, Custom K1 extruders by Rob.<br><br>Tons of multi-color and multi-material prints! |
+| andrewmcgr's VT 350 (MM.002) | ![](Images/Builds/andrew_2_front_1920.jpg) | ![](Images/Builds/andrew_2_part_1920.jpg) | Trident 350, A4Ts, Sherpa Minis, TMC 4671 closed-loop servo XY drives at 48V, BFI, Cartographer. Docks, brushes, carriage, XOL-compatible plates by Andrew.<br><br>Many multimaterial prints, including this enormous one! |
+| Ambrosia's Metal VT (MM.003) | ![](Images/Builds/ambrosia_3_front_1920.jpg) | ![](Images/Builds/ambrosia_3_part_1920.jpg) | Metal Trident with DragonBricks, Trident stalagmite docks by Ambrosia.<br><br>Featured on  a [Canuck Creator interview](https://www.youtube.com/watch?v=dB9FqNF6or0&t=164s)! |
+| Telxoid's Tridex 250 (350 wide) (MM.004) | ![](Images/Builds/telxoid_4_front_1920.jpg)  | ![](Images/Builds/telxoid_4_part.png) | Tridex, A4TBrick, PapLite belt extruders, docks + brushes/blockers by Telxoid.  <br><br>Tridex conversion running y-assist CoreXY kinematics!
+| Max's HX0 120 (MM.005) | ![](Images/Builds/runningsystemchanger_5_front_1920.jpeg) | ![](Images/Builds/runningsystemchanger_5_part1_1920.jpeg) | HexZero+BoxZer, Vampire Bat, DragonBricks, PapLite HBG2.0xTBG Slim with custom DB8 mount by Max. +10mm Y-shifted HammerHead bed w/ Nudge and brushes.<br><br>Custom side-mount toolhead board adds Y travel! |
+| Rob's VT (MM.006) | ![](Images/Builds/rob_6_front_1920.jpg) | ![](Images/Builds/rob_6_part2_1920.jpg) | RapidBrick heads by Rob, Trident stalagmite docks by Ambrosia. <br><br>Prints nicely! |
+| Caza's Metal Micron (MM.007) | ![](Images/Builds/caza_7_front_1920.jpg) |  ![](Images/Builds/caza_7_part_1920.jpg) |  Yavoth heads by Caza, Orbiter extruders, Micron Docks by Caza.<br><br>First Micron conversion!
+| Yeri's SF 160 (MM.008) | ![](Images/Builds/yeri_8_front_1920.jpg) | ![](Images/Builds/yeri_8_part_1920.jpg) | Salad Fork docks by Yeri, DragonBrick heads by Rob, G2Z extruders.<br><br> Nice example of wrap-around dock style! |
+| Sam's V0.2 120mm +30X (MM.009) | ![](Images/Builds/sam_9_front_1920.jpg) | ![](Images/Builds/sam_9_part_1920.jpg) | Docks by Rob, DragonBrick heads by Rob, LGX Lite extruders, customized Vampire Bat gantry by Sam.  <br><br>Extra wide! |
+| r2pdx's Micron 180 (MM.010) | ![](Images/Builds/r2pdx_10_front_1920.png) | ![](Images/Builds/r2pdx_10_part_1080.jpg) | Micron 180r1, AntHeads with modified ducts and WWG2 extruders, Nudge, gantry-mounted docks by r2pdx (also tested frame mounted docks).<br><br>On its way to becoming doomed! |
 
 Learn more from videos:
 * [Canuck Creator interviews Ambrosia](https://www.youtube.com/watch?v=dB9FqNF6or0&t=164s) - with a MadMax Trident
