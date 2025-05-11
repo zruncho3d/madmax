@@ -35,9 +35,9 @@ Learn more from videos:
 
 TODO: add videos for intial learning
 
-**This is an advanced mod**: you must be comfortable with modifying Klipper configs and debugging related error messages.
+**This is an advanced mod**: you must be comfortable with modifying Klipper configs and debugging related error messages, and potentially, doing small CAD mods to fit your printer.
 
-**This project is in beta**: parts are well-tested/well-trusted and docs are nearly complete, but expect changes to parts and expect minor gaps in docs.  
+**This project is in beta**: parts are well-tested/well-trusted and docs are nearly complete, but parts may change in the future.
 
 Earlier in a project is where your efforts will have the highest impact, so now's the time to jump onboard!
 
@@ -55,21 +55,20 @@ A combination of new parts makes it possible:
 * **Clips:** The new SpeedClips belt clips are the fastest belt attachment mechanism in the west, plus enable repeatable tensioning.
 * **Docks:** The docks use simple keyslots and magnets, with the toolhead modified to add ferrous flat-head screws.  It's all light, low-cost, small, and simple.
 
-All parts use easily-available purchased components, like pins, screws, and magnets.  You may already have everything you need to build this in your toolbox!   It’s more straightforward mod than you might think.
+All parts use reasonably-sourceable components, like pins, screws, and magnets. It’s a more straightforward mod than you might think.
 
 So, what's the catch?
-* Some lost XY build area, when printing with two heads. Space loss is inherent to all toolchangers, but for single-head prints, you can detach the second head in seconds, to restore nearly 100% of the original build volume.
-* No positive lock on the toolhead - only a magnetic hold.  In practice, this works fine, and means that no complex locking mechanism or motors are needed, plus enables the probing method.  It's safe; should the head detach for any reason, the firmware immediately safes the printer, just like with any other fault.
-* Some printers and toolheads will need a completed port.
-* No builds beyond two heads, yet - but this is the sweet spot for high-speed multimaterial.
+* Some lost XY build area, when printing with two heads. **Space loss is inherent to all toolchangers**, but for single-head prints, you can detach the second head in seconds, to restore nearly the full original build volume.
+* No positive lock on the toolhead - only a magnetic hold.  In practice, this works fine, and means that no complex locking mechanism or motors are needed, plus it enables the probing method.  It's safe; should the head detach for any reason, the firmware immediately safes the printer, just like with any other fault.
+* Some printers and toolheads will need some CAD work before they're print-and-play.
+* The lower two BHCS screws on the coupling may wear with time and need replacement for reliable probing.  
+* No builds seen beyond two heads, yet.
 
 That’s about it.  Read on to learn what a MadMax can do.
 
 ## Enable serious new capabilities
 
-This mod is for those who want a more capable printer.
-
-The surprise is that you can enable *many* new capabilities, with only about $100, one night of printing, one night of building, and one night of configuration and tuning.
+This mod is for those who want a more capable printer.  The surprise is that you can enable *many* new capabilities, with only about $100, one night of printing, one night of building, and one night of configuration and tuning.
 
 | Use case | Multiple colors  | Multiple materials | Full-contact supports | Tap/Boop replacement |
 | --- | --- | --- | --- | --- |
@@ -94,7 +93,9 @@ If you don’t see your printer in the list below, adding it tends to be straigh
 
 The main requirement is a front-facing MGN9H or MGN12H linear rail and XY head motion, so bed slingers and rail riders are out.
 
-A few of the supported heads: A4T, AntHead, OmniBrick, DragonBrick:
+TODO: update image to show all heads
+
+A subset of the supported heads: A4T, AntHead, OmniBrick, DragonBrick:
 
 | ![](Images/Toolheads_Rear.jpg) | ![](Images/Toolheads_Front.jpg) |
 | --- | --- |
@@ -103,7 +104,7 @@ Note that MGN9H plates have a diamond of magnets, whereas MGN12H plates have a s
 
 ## Easy to print, build, and configure
 
-All parts are easy and fast to print, with no large overhangs, no large bridges, and supports included.  
+All parts are easy and fast to print, with no large overhangs, no large bridges, and supports included.
 
 Here's a full plate for the MadMax core parts for a conversion:
 
@@ -140,7 +141,7 @@ Automatic offset calibration is a big deal for the overall experience of a toolc
 ### Key features
 * Support for a wide range of printers and toolheads, including static-gantry printers
 * Fast toolhead changing for faster, better multi-extruder prints
-* Bonus Maxwell-coupling-driven nozzle probing (!)
+* Bonus Maxwell-coupling-driven nozzle probing
 * Toolhead failure detection without extra parts
 * Bonus pragmatic features:
  * Pinned carriage enables reproducible retensioning
@@ -162,7 +163,7 @@ Like what you see?  [Buy me a coffee](https://ko-fi.com/zruncho3d) to show the l
 
  :heart: *-Zruncho*
 
-This one took a lot of prototypes and time.  Here's a partial set:
+This one took a lot of prototypes and time.  Here's a partial set, which shows evolution from toys at the top, to little mods to try out the idea (green/gray near top left), to a range of increasingly reliable and solid carrriages and plates.
 
 ![](Images/Progression_core.png)
 
@@ -171,7 +172,7 @@ This one took a lot of prototypes and time.  Here's a partial set:
 * 2025-02-15 Started the GitHub conversion process
 * 2024-11-04 Beta-3 files shared: new CAD, stiffer, better airflow, washers for wires, lots more
 * 2024-09-12 Beta-2 files shared: MGN12 support, adds 120 degree option, better probe wiring, locking screws for magnets, nuts/screws instead of set screws ... lots of changes
-* 2024-08-XX Spinoff: automatic magnet tester built - tests magnet strength, probe force, and more
+* 2024-08-01 Spinoff: automatic magnet tester built - tests magnet strength, probe force, and more
 * 2024-06-08 Proper closed beta program launches, with beta-1 files
 * 2024-05-14 First two-extruder prints
 * 2024-04-01 Spinoff: [Vampire bat](https://github.com/zruncho3d/vampire_bat) release
@@ -182,4 +183,4 @@ This one took a lot of prototypes and time.  Here's a partial set:
 
 ## Credits
 
-Thanks to all those who contributed to the beta program in some form, especially `caza` for a range of early testing, plus those who got all the way and contributed designs - `Rob`, `andrewmcgr`, `Ambrosia`, `Telxoid`, `Max`, `Sam`, `r2pdx`, and more - plus those whose feedback provided encouraging - `Ankurv`, `hartk`, `clee`, `chirpy`.
+Thanks to all those who contributed to the beta program in some form, especially `caza` for a range of early testing, plus those who got all the way and contributed designs - `Rob`, `andrewmcgr`, `Ambrosia`, `Telxoid`, `Max`,  `Yeri`, `Sam`, `r2pdx`, and more - plus those whose feedback provided encouragement - `Ankurv`, `hartk`, `clee`, `chirpy`, and more.
