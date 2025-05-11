@@ -4,7 +4,7 @@ Your main task is to install the `klipper-toolchanger` plugin, then copy over co
 
 If you already have toolhead-specific config files, this step should be easy.
 
-You should not have to invent anything here!  You should only have to copy over a few files, then merge them with yours.
+You should not have to invent anything here!  You should only have to copy over a few files, then merge them with yours, and resolve the inevitable Klipper errors.
 
 If you experience issues, check the [Troubleshooting](TROUBLESHOOTING.md) page first.
 
@@ -32,11 +32,11 @@ install_script: install.sh
 
 ### Set up toolhead configs
 
-* Copy over the provided sample configs from this repo:
+* Copy over the provided sample configs from the MadMax repo (this repo!):
  * `klipper-toolchanger/*` ← MadMax-specific sample configs for each toolhead; a starting point.
  * `macros.cfg`
 * Backup your `printer.cfg` file.
-* Copy over the bed mesh section below to `printer.cfg`, if you don’t already have this section; this appears to be a bug in klipper-toolchanger.
+* Copy over the bed mesh section below to `printer.cfg`.  If you don’t already have this section, `klipper-toolchanger` will not start. This appears to be a bug in klipper-toolchanger.
 ```
 # klipper-toolchanger expects this section to be present.
 [bed_mesh]
@@ -46,7 +46,7 @@ mesh_min: 2, 75
 mesh_max: 118, 110
 probe_count: 3, 3
 ```
-* Modify your `printer.cfg` to reference the provided `klipper-toolchanger/` sample files, like in the sample chunk below; start with one `toolhead_*.cfg` file.
+* Modify your `printer.cfg` to reference the provided `klipper-toolchanger/` sample files, like in the sample chunk below; start with one `toolhead_*.cfg` file, and leave the rest commented out for now.
 ```
 [include klipper-toolchanger/macros.cfg]
 [include klipper-toolchanger/tool_detection.cfg]
@@ -57,14 +57,13 @@ probe_count: 3, 3
 [include klipper-toolchanger/homing.cfg]
 ```
 * If you already have a toolhead-specific config file, make that file the base, and add elements from the config sample.
-* Otherwise, modify and review all the added configs, making sure that any settings which need a change for your printer - such as axis limits, pin values, and more - are all good.
- * In particular, edit toolhead-specific files in the copied-over `klipper-toolchanger/toolhead_*.cfg `to match your printer’s pins and values, especially:
+* Otherwise, modify and review all the added configs, making sure that every printer-specific setting is set correctly for your printer. Edit toolhead-specific files in the copied-over `klipper-toolchanger/toolhead_*.cfg `to match your printer’s pins and values, especially:
    * `canbus_uuid`
    * Extruder pins, rotation_distance, gear_ratio, and currents
    * Z/Probe pin for each toolhead; this will drive toolhead detection, so nothing will happen when you home and try to `UNSELECT_TOOL` later.
    * X endstop pin (same as Z probe), if using an endstop switch there.
- * Note that `[extruder]` in `toolhead_0.cfg` becomes `[extruder1]` in `toolhead_1.cfg`.
-* (If using an endstop sensor/switch) Modify `klipper-toolchanger/homing.cfg`’s `[homing_override]` section so that:
+   * Note that `[extruder]` in `toolhead_0.cfg` becomes `[extruder1]` in `toolhead_1.cfg`.
+* (If using an endstop sensor/switch) Modify `klipper-toolchanger/homing.cfg`’s `[homing_override]` section to comment out the sensorless homing macros:
  * `#_SENSORLESS_HOME_X` → `G28 X`
  * `#_SENSORLESS_HOME_Y` → `G28 Y`
 * Comment out any `[homing_override]` section you probably have in `printer.cfg`, as it will override this one, which initializes the toolchanger code.
@@ -73,7 +72,7 @@ probe_count: 3, 3
 [force_move]
 enable_force_move: true
 ```
-* Restart Klipper.
+* Restart Klipper, and resolve any errors that pop up.
 
 ### Initial Testing
 
@@ -81,8 +80,13 @@ enable_force_move: true
  * The head probe pin still shows triggered when pressed
  * Endstops still trigger when pressed (especially X endstop)
 * Make sure a defined head is physically connected, as the `klipper-toolchanger` configuration assumes this! Otherwise, you get a failure to initialize the toolchanger when doing `G28` the first time after klipper restart, and then you have to restart Klipper.
-* Optionally, use the probe as the virtual Z endstop
- * TODO - add notes for a virtual Z endstop configuration
+* Optionally, use the probe as the virtual Z endstop.  Something like this should be present:
+```
+[stepper_z]
+...
+endstop_pin: probe:z_virtual_endstop
+```
+... as well as logic in `[homing_override]` (now found in `klipper-toolchanger/homing.cfg`) to move to the center and run `G28 Z`.  Verify this logic is present and make sure the G-codes in that macro are seem reasonable  and match your printer sizes.
 * Home (`G28`) should succeed.  That’s a good first step.
 * Verify the build hasn't changed, with `PROBE_ACCURACY`.
 * Prepare for a `Z_TILT_ADJUST` or `QUAD_GANTRY_LEVEL` run:
