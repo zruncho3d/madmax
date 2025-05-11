@@ -21,7 +21,7 @@ TODO: finish Beta member table with standard front views, parts examples, and de
 | andrewmcgr's VT 350 (MM.002) | ![](Images/Builds/andrew_2_front.jpg) | ![](Images/Builds/andrew_2_part.jpg) | Trident 350, 2x A4T, 2x Sherpa Mini, TMC 4671 closed-loop servo XY drives on 48 V, BFI, Cartographer. Docks, brushes, carriage, XOL-compatible plates by Andrew |
 | Ambrosia's Metal VT (MM.003) |  | |
 | Telxoid's Tridex 250 (350 wide) (MM.004) | ![](Images/Builds/telxoid_4_front_1920.jpg)  | ![](Images/Builds/telxoid_4_part.png) | Tridex, 2x A4TBrick, 2x PapLite belt extruders, docks + brushes/blockers by Telxoid.  <br><br>Tridex conversion running y-assist CoreXY kinematics!
-| Max's HX9 120 (MM.005) |  | |
+| Max's HX0 120 (MM.005) | ![](Images/Builds/runningsystemchanger_5_front.jpeg) | ![](Images/Builds/runningsystemchanger_5_part1.jpeg) | HX0+B0, Vampire Bat, 2x DragonBricks, 2x PapLite HBG2.0xTBG (slim version) modified for four point connection with DB8 extruder mount and side-mounted THB for maximized Y travel. Bed moved 10mm to the rear on HammerHead bed with permanently mounted Nudge and A1 mini nozzle brushes.|
 | Rob's VT (MM.006) |  | |
 | Caza's Metal Micron (MM.007) |  | |
 | Yeri's SF 160 (MM.008) |  | |
