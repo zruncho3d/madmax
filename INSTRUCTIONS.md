@@ -36,31 +36,31 @@ The no-brace MGN9 plate is for Dragon heatblocks, to add clearance.
 For all docks and toolhead parts, check with the provider.
 
 **Tools:**
-The following tools are rquired for a complete build:
+The following tools are required for a complete build:
+![](Images/Instructions/required_tools.jpg)
 * 2mm straight hex driver (not balldriver) - for M3 BHCS
 * Crimp tool - for ring terminals
 * Wire stripper
-* Flush cutters
-* Wire cutters
-* Bench vise
 * Calipers
 * Multimeter
+* Flush cutters
+* Wire cutters
 
-Optional, but recommended:
-* 2.5mm straight hex driver (not balldriver) - for M3 SHCS
-* 3mm Reamer [Amazon](https://www.amazon.com/dp/B07K49B4LC)
-* 1/8" Reamer [Amazon](https://www.amazon.com/dp/B07JPDSSBM)
-* Holder for reamer and hand drills [Amazon](https://www.amazon.com/dp/B07TRGW3W7)
-* Countersink - for part cleaning
-* Pliers Wrench (Knipex 180mm+ length preferred) - for magnet insertion
-* Scale for measuring probe force [Amazon](https://www.amazon.com/dp/B08SM4TB8P)
+Optional tools, but recommended:
+![](Images/Instructions/optional_tools.jpg)
 * (If homing with endstop switch)
   * Soldering iron
   * Lighter or heat gun for heatshrink
+* Pliers Wrench (Knipex 180mm+ length preferred) - for magnet insertion
+* 3mm Reamer [Amazon](https://www.amazon.com/dp/B07K49B4LC)
+* 1/8" Reamer [Amazon](https://www.amazon.com/dp/B07JPDSSBM)
+* Holder for reamer and hand drills [Amazon](https://www.amazon.com/dp/B07TRGW3W7)
 * 2.9mm drill bit
-* Powered drill (for 2.9mm drill bit)
-
-TODO: pic of tools
+* 2.5mm straight hex driver (not balldriver) - for M3 SHCS
+* X-acto knife
+* Countersink - for part cleaning
+* Bench vise
+* Scale for measuring probe force [Amazon](https://www.amazon.com/dp/B08SM4TB8P)
 
 ### Carriage
 Build the carriage first, so you can match both plates to it.
@@ -69,14 +69,17 @@ Build the carriage first, so you can match both plates to it.
 | --- | --- |
 | Front | Rear |
 
-TODO: show pic of parts required for carriage build.
+Parts needed:
+
+![](Images/Instructions/carriage_parts.jpg)
 
 There are two types of FHCS used here: magnet-retention screws up top (3x, stainless or alloy), plus electrical-connection screws below (2x, must be stainless).
 * Tips
  * Create a “nut push tool”: an M3x8 SHCS plus M3 nut, twisted into a spare M3 T-nut.  Later - adjust the depth to ensure nuts get pushed-in fully to the plastic part!  
-   * TODO: add pic of nut push tool
+   ![](Images/Instructions/push_tool.jpg)
  * If magnets don’t fit, likely because the print is overextruded, use a 6mm drill bit or reamer plus spot of glue.
- * Magnet removal: All magnets can be removed from the backside by pushing hard with the short side of an allen wrench; having the allen wrench on a table and the part on top makes it easier to push hard, but be careful to cup your hand over the magnet so the magnet doesn’t disappear with a vengeance, into your eye.
+ * Magnet removal: All magnets can be removed from the backside by pushing hard with the short side of an allen wrench, like this:
+ ![](Images/Instructions/safe_magnet_extraction.jpg)
 * Prep
  * Clear any elephant foot for magnet holes with a countersink bit.
  * Clear out the 4x carriage-mount holes with a 3mm reamer or drill bit.
@@ -131,7 +134,10 @@ There are two types of FHCS used here: magnet-retention screws up top (3x, stain
 | --- | --- |
 | Front | Rear |
 
-TODO: show pic of parts required for plate build.
+Parts needed:
+
+![](Images/Instructions/plate_parts.jpg)
+
 
 * Prep
  * Clear any elephant foot for magnet holes with a countersink bit.
@@ -174,13 +180,17 @@ TODO: show pic of parts required for plate build.
 | --- | --- |
 | Front | Rear |
 
+Parts needed:
+
+![](Images/Instructions/clip_parts.jpg)
+
 **Pins**
 * Drill out 2x M3 heatsets using a 2.9mm or similar drill.  Get close to 2.95mm or so, and leave a small taper on the narrow side.
 * Using a small tabletop vice or pliers wrench, press heatsets into the flat end of 3mmx35 pins.  The wide end should align to the pin end, and be flush.
 
 **Belt Clips**
 
-TODO: belt-path diagram render or picture
+![](Images/Instructions/assembled_clip_example.jpg)
 
 * Prep
  * Remove the tiny custom support for each belt clip, near the screw hole.  Clear the support area with an x-acto or flush cutters, if needed; you need the M3 t-nut to fit here.
