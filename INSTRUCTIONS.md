@@ -215,7 +215,7 @@ You now have a lighter-weight, lower-cost Tap replacement that enables painless 
 * Add crimp terminals and a crimp terminal housing to the plate for the toolhead board
 * Update a pin in your Klipper config for the probe
 * Add the carriage and clips to the printer
-* Add grease to the metal pins for better longevity.
+* Add grease to the metal pins for better longevity
 
 Then you can test probing functionality, probe accuracy, and get updated resonace-testing results.  All those will confirm that you have a good build.
 
