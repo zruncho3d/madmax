@@ -241,4 +241,4 @@ Check with your dock maker for any other instructions.
 
 BTW, you can add just one toolhead and test out docking and undocking if you’d like. You don’t actually need more than a shroud with a hotend and a toolhead plate to be connected; you can always add a plate extension cord to the mainboard, before setting up the toolhead board, to play.
 
-Continue to the [Configuration](Configuration.md) section next!
+Continue to the [Configuration](CONFIGURATION.md) section next!
