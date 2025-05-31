@@ -152,6 +152,7 @@ Automatic offset calibration is a big deal for the overall experience of a toolc
 
 ## What's here?
 - #### [Getting Started](GETTING_STARTED.md) - select a printer, toolhead, and extruder, amongst choices
+- #### [BOM](BOM.md) - parts to procure
 - #### [Instructions](INSTRUCTIONS.md) - print and build steps
 - #### [Configuration](CONFIGURATION.md) - Klipper config and calibration
 - #### [Story](STORY.md) - how and why this project came to be
