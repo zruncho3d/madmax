@@ -9,7 +9,7 @@ Q: How is this different from TapChanger/Stealthchanger/MISSChanger?
 A: These are key ways:
 * Static gantry support, so you don’t need a flying gantry printer OR to make a liftbar, which reduces complexity.
   *	This attribute enables many printers to get a toolchanger addition: Trident, Salad Fork, V0, T0, etc.
- * As a result, toolchanges are faster, without having to go to 48V or do any optimization, because there’s no Z motion needed.
+  * As a result, toolchanges are faster, without having to go to 48V or do any optimization, because there’s no Z motion needed.
 * The attachment mechanism differs; it doesn’t have a positive lock, only magnetic.
 * The stock docks are different, and don't need Z motion; each toolhead has screws that mate to the docks.
 
