@@ -1,16 +1,15 @@
 ## MadMax - the crazy-simple toolchanger *conversion* for your CoreXY printer
 
 Enable multi-material printing *on the printer you already own* - with low cost, low effort, low filament waste, and fast multi-material switching.
+<br><br>
 
-![](Renders/Front_and_back_no_trans.png)
-
-| ![gif](*.gif) | ![gif](*.gif) | ![gif](*.gif) |
+ | ![](Renders/Front_and_back_no_trans_small.png) | ![gif](Videos/Yell_Toolchange.gif) | ![gif](Videos/Andrewmcgr_printing_short.gif) |
 | --- | --- | --- |
-| Toolchanging | Printing | Probing (with Nudge) |
+| Solid Core<br>new plate + carriage design using Maxwell coupling | Fast Toolchanging<br>(`Yell`'s E3-to-Trident with AntHeads)  | Quality Printing<br> (`Andrewmcgr`'s VT 350 with A4Ts) |
 
-TODO: table with GIFs covering the main steps - ideally all perfect loops, all vertical
-
-**MadMax is currently in active beta**, with over 10 builds doing reliable two-head prints:  
+<br><br>
+**MadMax is currently in active beta**, with over 12+ completed builds doing two-head printing:
+<br><br>
 
 | Printer | Image | Sample | Description |
 | --- | ---- | ---- | ---- |
@@ -30,7 +29,6 @@ TODO: table with GIFs covering the main steps - ideally all perfect loops, all v
 Learn more from videos:
 * [Canuck Creator interviews Ambrosia](https://www.youtube.com/watch?v=dB9FqNF6or0&t=164s) - with a MadMax Trident
 * [Speedclips.... they're real, and they're spectacular](https://www.youtube.com/watch?v=UsWV_GbRdjc)
-* Fast toolchanges and motion with Andrew's build
 * Core Build
 * Selecting a Toolhead
 
@@ -38,7 +36,7 @@ TODO: add videos for intial learning
 
 **This is an advanced mod**: you must be comfortable with modifying Klipper configs and debugging related error messages, and potentially, doing small CAD mods to fit your printer.
 
-**This project is in beta**: parts are well-tested/well-trusted and docs are nearly complete, but parts may change in the future.
+**This project is in beta**: parts are well-tested/well-trusted and docs are complete, but parts may change in the future.
 
 Earlier in a project is where your efforts will have the highest impact, so now's the time to jump onboard!
 
@@ -94,7 +92,7 @@ If you don’t see your printer in the list below, adding it tends to be straigh
 
 The main requirement is a front-facing MGN9H or MGN12H linear rail and XY head motion, so bed slingers and rail riders are out.
 
-TODO: update image to show all heads
+TODO: update image to show more heads
 
 A subset of the supported heads: A4T, AntHead, OmniBrick, DragonBrick:
 
@@ -119,13 +117,9 @@ TODO: Video: building MadMax: core build
 
 TODO: Video: building MadMax: plate build
 
-TODO: Video: building MadMax: toolhead choices
-
-TODO: Video: building MadMax: dock samples
+TODO: Video: building MadMax: toolhead choices and dock samples
 
 Sample Klipper configuration is available in this repo, for [Viesturz' klipper-toolchanger](https://github.com/viesturz/klipper-toolchanger), but [TypQxQ's KTC2](https://github.com/TypQxQ/KTC) and [Bikin Toolchanger](https://github.com/Bikin-Creative/Lineux-Toolchanger/tree/main/Klipper) are also potential choices.
-
-TODO: Video: Configuring MadMax with klipper-toolchanger (show Klipper config)
 
 Calibration is fully automated (using [Nudge](https://github.com/zruncho3d/nudge)), can run on every print (using [r2pdx's macros](https://github.com/joseph-greiner/klipper_tc_automatic_offset_calibration)), and includes head crash detection for safety.
 
@@ -161,7 +155,7 @@ Automatic offset calibration is a big deal for the overall experience of a toolc
 - #### [Troubleshooting](TROUBLESHOOTING.md) - steps to diagnose the most-common errors
 
 ## Support the creator
-Like what you see?  [Buy me a coffee](https://ko-fi.com/zruncho3d) to show the love and enable future mods and content - stuff like [F0](https://github.com/zruncho3d/f-zero), [T0](https://github.com/zruncho3d/tri-zero), [B0](https://github.com/zruncho3d/boxzero), [X0](https://github.com/zruncho3d/double-dragon), [D0](https://github.com/zruncho3d/DuelingZero), [DX](https://github.com/zruncho3d/DuelingX), [ZeroPanels](https://github.com/zruncho3d/ZeroPanels), [ZeroClick](https://github.com/zruncho3d/zeroclick), [NoDropNuts](https://github.com/zruncho3d/f-zero/tree/main/STLs/NoDropNuts), [Poke](https://github.com/zruncho3d/poke), [Nudge](https://github.com/zruncho3d/nudge), and more.
+Like what you see?  [Buy me a coffee](https://ko-fi.com/zruncho3d) to show the love and enable future mods and content - stuff like [F0](https://github.com/zruncho3d/f-zero), [T0](https://github.com/zruncho3d/tri-zero), [B0](https://github.com/zruncho3d/boxzero), [X0](https://github.com/zruncho3d/double-dragon), [D0](https://github.com/zruncho3d/DuelingZero), [DX](https://github.com/zruncho3d/DuelingX), [ZeroPanels](https://github.com/zruncho3d/ZeroPanels), [ZeroClick](https://github.com/zruncho3d/zeroclick), [NoDropNuts](https://github.com/zruncho3d/f-zero/tree/main/STLs/NoDropNuts), [Poke](https://github.com/zruncho3d/poke), [Nudge](https://github.com/zruncho3d/nudge), [Vampire Bat](https://github.com/zruncho3d/vampire_bat), and more.
 
  :heart: *-Zruncho*
 
@@ -177,7 +171,7 @@ This one took a lot of prototypes and time.  Here's a partial set, which shows e
 * 2024-08-01 Spinoff: automatic magnet tester built - tests magnet strength, probe force, and more
 * 2024-06-08 Proper closed beta program launches, with beta-1 files
 * 2024-05-14 First two-extruder prints
-* 2024-04-01 Spinoff: [Vampire bat](https://github.com/zruncho3d/vampire_bat) release
+* 2024-04-01 Spinoff: [Vampire Bat](https://github.com/zruncho3d/vampire_bat) release
 * 2024-04-10 Spinoff: [Nudge](https://github.com/zruncho3d/nudge) release
 * 2024-01-14 Spinoff: manual magnet tester
 * 2023-12-10 Started collaborating on MadMax, as a front-mount TC
