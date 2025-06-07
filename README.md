@@ -162,4 +162,4 @@ This one took a lot of prototypes and time.  Here's a partial set, which shows e
 
 ## Credits
 
-Thanks to all those who contributed to the beta program in some form, especially `caza` for a range of early testing, plus those who got all the way and contributed designs - `Rob`, `andrewmcgr`, `Ambrosia`, `Telxoid`, `Max`,  `Yeri`, `Sam`, `r2pdx`, and more - plus those whose feedback provided encouragement - `Ankurv`, `hartk`, `clee`, `chirpy`, and more.
+Thanks to all those who contributed to the beta program in some form, especially `caza` for a range of early testing, plus those who got all the way and contributed designs - `Rob`, `andrewmcgr`, `Ambrosia`, `Telxoid`, `Max`,  `Yeri`, `Sam`, `r2pdx`, 'Yell', 'Vlad', and more - plus those whose feedback provided encouragement - `Ankurv`, `hartk`, `clee`, `chirpy`, and more.
