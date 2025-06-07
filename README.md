@@ -29,10 +29,8 @@ Enable multi-material printing *on the printer you already own* - with low cost,
 Learn more from videos:
 * [Canuck Creator interviews Ambrosia](https://www.youtube.com/watch?v=dB9FqNF6or0&t=164s) - with a MadMax Trident
 * [Speedclips.... they're real, and they're spectacular](https://www.youtube.com/watch?v=UsWV_GbRdjc)
-* Core Build
-* Selecting a Toolhead
-
-TODO: add videos for intial learning
+* Core Build (coming later)
+* Selecting a Toolhead (coming later)
 
 **This is an advanced mod**: you must be comfortable with modifying Klipper configs and debugging related error messages, and potentially, doing small CAD mods to fit your printer.
 
@@ -85,14 +83,12 @@ MadMax is more than just the core and dock interfaces; already, **it is an entir
 
 | Carriages | Belt Configs | Toolheads (core only) | Toolheads (to docks) | Printers |
 | --- | --- | --- | --- | --- |
-| 2 | 3 | 4+ | 7+ | Lots |
-| MGN9H<br>MGN12H | 6mm w/3mm sep<br>6mm w/3mm sep<br>9mm w/4mm sep| MiniSB<br>OmniBurner<br>DragonBurner<br>RapidBurner<br>A4T<br>XOL | DragonBrick<br>RapidBrick<br>AntHead<br>A4T<br>A4TBrick<br>OmniBrick<br>XOL<br> |  Voron Trident<br>Voron Zero<br>Micron<br>Salad Fork<br>Tri-Zero<br>Pandora's Box<br>[E3-to-Trident-conversion](https://github.com/yell3D/Ender3dent) |
+| 2 | 3 | 6+ | 7+ | Lots |
+| MGN9H<br>MGN12H | 6mm w/3mm sep<br>6mm w/4mm sep<br>9mm w/4mm sep| MiniSB<br>OmniBurner<br>DragonBurner<br>RapidBurner<br>A4T<br>XOL | DragonBrick<br>RapidBrick<br>AntHead<br>A4T<br>A4TBrick<br>OmniBrick<br>XOL<br> |  Voron Trident<br>Voron Zero<br>Micron<br>Salad Fork<br>Tri-Zero<br>Pandora's Box<br>[E3-to-Trident-conversion](https://github.com/yell3D/Ender3dent) |
 
 If you don’t see your printer in the list below, adding it tends to be straightforward.
 
-The main requirement is a front-facing MGN9H or MGN12H linear rail and XY head motion, so bed slingers and rail riders are out.
-
-TODO: update image to show more heads
+The main requirement is a front-facing MGN9H or MGN12H linear rail and XY head motion, so bed slingers and rod riders are out.
 
 A subset of the supported heads: A4T, AntHead, OmniBrick, DragonBrick:
 
@@ -113,23 +109,9 @@ To this plate, you would add printer-specific toolheads and docks.
 
 The entire conversion can be done in an evening, as covered by instructional videos, and no individual steps are hard.
 
-TODO: Video: building MadMax: core build
-
-TODO: Video: building MadMax: plate build
-
-TODO: Video: building MadMax: toolhead choices and dock samples
-
 Sample Klipper configuration is available in this repo, for [Viesturz' klipper-toolchanger](https://github.com/viesturz/klipper-toolchanger), but [TypQxQ's KTC2](https://github.com/TypQxQ/KTC) and [Bikin Toolchanger](https://github.com/Bikin-Creative/Lineux-Toolchanger/tree/main/Klipper) are also potential choices.
 
 Calibration is fully automated (using [Nudge](https://github.com/zruncho3d/nudge)), can run on every print (using [r2pdx's macros](https://github.com/joseph-greiner/klipper_tc_automatic_offset_calibration)), and includes head crash detection for safety.
-
-TODO: Video: Initial MadMax calibration (XY positions, reliability)
-
-TODO: Video: head crash detection for safety!
-
-Every-print auto-calibration looks like this:
-
-TODO: Video: Auto-calibration between nozzles
 
 Automatic offset calibration is a big deal for the overall experience of a toolchanger, because it removes the main source of pain relative to automated filament changers.  You can change hotends or adjust the mount - things which can affect offset calibration - and there’s no work to do, because calibration is automatic.  Plus, any differences in offsets due to temperature or changes to the positions of the heads or the frame are automatically accounted for, by probing at the operating temp.
 
