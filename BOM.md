@@ -76,7 +76,7 @@ Prelim BOM - boring, by design!  Reasonable, with the exception of the Acetal pi
      * **60mm wire 22-26 gauge**; must be less than 1.8mm OD
        * [AliExpress wire](https://www.aliexpress.us/item/2251832766791205.html)
  * Magnets
-   * **6x 6x3mm N52 (Neodynium) magnets**: actual amount to use will depend on toolhead weight and bed stability (4-6x)
+   * **6x 6x3mm N52 (Neodymium) magnets**: actual amount to use will depend on toolhead weight and bed stability (4-6x)
      * **THESE MUST BE REAL N52. Do not try Amazon or AliExpress.  Use known-good vendors.**
      * Example: [Fabreeko N52](https://www.fabreeko.com/products/n52-neodym-magnet-6x3mm-schwarz)
  * Optional Magnet-Retaining Screws (required if used in chamber; probably optional if in free air)
