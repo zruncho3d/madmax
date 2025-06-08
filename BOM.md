@@ -36,7 +36,7 @@ Prelim BOM - boring, by design!  Reasonable, with the exception of the Acetal pi
       * Amazon: [MBXL T-nuts](https://www.amazon.com/MakerBeam-XL-MakerBeamXL-15x15mm-Diameter/dp/B06XHQHD4H)
       * Can make your own, too, in a pinch.
    * **2x Metal Tubes**
-     * These are metal tubes, into which the belt pins go.  
+     * These are metal tubes, into which the belt pins go.
      * Width: Two sizes are recommended:
        * Metric: 4mm OD, 3.2mm ID
        * English: 5/32" OD (3.97mm) x 0.014"
@@ -107,30 +107,30 @@ NOTE: **per head totals**, below:
 Below are starter requirements.  Make sure to check with your dock/toolhead vendor first.
 
 * Docks (x2): **per dock** below; depends on specific dock and printer, but commonly:
- * **3-4x 6x3mm N52 magnets**
- * **M3 or M5 mounting screws**
- * For Xol/A4T dock by `andrewmcgr`:
-   * Each dock:
-      * 8x M3x8 SHCS or BHCS
-      * 8x Voron M3 headsets
-      * 2x M5x10
-      * 2x M5x20
-      * 4x M5 extrusion nuts, 3x 6x3mm magnets
+  * **3-4x 6x3mm N52 magnets**
+  * **M3 or M5 mounting screws**
+  * For Xol/A4T dock by `andrewmcgr`:
+    * Each dock:
+       * 8x M3x8 SHCS or BHCS
+       * 8x Voron M3 headsets
+       * 2x M5x10
+       * 2x M5x20
+       * 4x M5 extrusion nuts, 3x 6x3mm magnets
 * Second Toolhead - check with toolhead vendor first:
- * All the same stuff a typical hotend will have (fans, hotend, toolhead board, bowden, screws, ECAS, …)
- * DragonBrick/RapidBrick - per head
-   * 3x M3x8 FHCS - must be alloy!
- * XOL/A4T by `andrewmcgr`:
-   * Each toolhead: 3x M3x8 or M3x6 FHCS (must be strongly magnetic, i.e. steel and not stainless), 1x M3x16, 1x M3x12 SH or BH, 2x extra heatsets
- * AntHead
-   * See AntHead repo
-   * OmniBrick - per head
-     * 4x M3x8 FHCS - must be alloy!
-     * 2x heatsets (add in post; a bottom rear of cowl)
-     * 1x M3x6 FHCS (for Huvud shroud)
+  * All the same stuff a typical hotend will have (fans, hotend, toolhead board, bowden, screws, ECAS, …)
+  * DragonBrick/RapidBrick - per head
+    * 3x M3x8 FHCS - must be alloy!
+  * XOL/A4T by `andrewmcgr`:
+    * Each toolhead: 3x M3x8 or M3x6 FHCS (must be strongly magnetic, i.e. steel and not stainless), 1x M3x16, 1x M3x12 SH or BH, 2x extra heatsets
+  * AntHead
+    * See AntHead repo
+    * OmniBrick - per head
+      * 4x M3x8 FHCS - must be alloy!
+      * 2x heatsets (add in post; a bottom rear of cowl)
+      * 1x M3x6 FHCS (for Huvud shroud)
 * Nudge (optional)
- * Not technically required, but highly recommended.  See its GitHub page: [https://github.com/zruncho3d/nudge](https://github.com/zruncho3d/nudge)
+  * Not technically required, but highly recommended.  See its GitHub page: [https://github.com/zruncho3d/nudge](https://github.com/zruncho3d/nudge)
 * Additional Spool Holder
 * Additional Bowden/ECAS
 * Upgraded PSU
- * An upgraded PSU might be necessary. Either go for a comfortable margin or buy an inline power meter (like a Watt’s Up) and measure consumption if you’re not sure.
+  * An upgraded PSU might be necessary. Either go for a comfortable margin or buy an inline power meter (like a Watt’s Up) and measure consumption if you’re not sure.
