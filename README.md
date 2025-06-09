@@ -137,6 +137,12 @@ Automatic offset calibration is a big deal for the overall experience of a toolc
 - #### [FAQ](FAQ.md) - covers questions you may have; worth a skim
 - #### [Troubleshooting](TROUBLESHOOTING.md) - steps to diagnose the most-common errors
 
+## Get Support
+
+We now have a channel, `#madmax-toolchanger`, on the DoomCube Discord, in the misc-3dp area.  For now, this is the official home for all discussions and dev updates.  Go there!
+
+[DoomCube Discord](discord.gg/doomcube)
+
 ## Support the creator
 Like what you see?  [Buy me a coffee](https://ko-fi.com/zruncho3d) to show the love and enable future mods and content - stuff like [F0](https://github.com/zruncho3d/f-zero), [T0](https://github.com/zruncho3d/tri-zero), [B0](https://github.com/zruncho3d/boxzero), [X0](https://github.com/zruncho3d/double-dragon), [D0](https://github.com/zruncho3d/DuelingZero), [DX](https://github.com/zruncho3d/DuelingX), [ZeroPanels](https://github.com/zruncho3d/ZeroPanels), [ZeroClick](https://github.com/zruncho3d/zeroclick), [NoDropNuts](https://github.com/zruncho3d/f-zero/tree/main/STLs/NoDropNuts), [Poke](https://github.com/zruncho3d/poke), [Nudge](https://github.com/zruncho3d/nudge), [Vampire Bat](https://github.com/zruncho3d/vampire_bat), and more.
 
