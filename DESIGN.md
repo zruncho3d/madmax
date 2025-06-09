@@ -69,7 +69,7 @@ Heat cycles cause expansion and contraction, and then the screws loosen, and the
 
 Now, layer lines are all aligned, and screws are in compression; you can’t split the layers by forming the threads.  There are no formed threads in the parts anymore, anyway.
 
-What we have on the plate part (which sees the most heat) is solid: metal (ring terminal) touches metal (heaetset).
+What we have on the plate part (which sees the most heat) is solid: metal (ring terminal) touches metal (heatset).
 
 The carriage has it a bit easier for now, heat-wise, and seems OK after an initial retightening.  This would be an area to improve.
 
@@ -135,7 +135,7 @@ The orientations affect things more than you might expect!
 
 ![](Diagrams/magnet_data_orientation.png)
 
-The end choice was 6mm Neodynium magnets, as they are strong (about 1kg per magnet), are sourceable from multiple locations, small enough, and don't lose too much force at reasonable chamber temps.
+The end choice was 6mm Neodymium magnets, as they are strong (about 1kg per magnet), are sourceable from multiple locations, small enough, and don't lose too much force at reasonable chamber temps.
 
 A magnet plus a ferrous screw would give more design flexibility, with good hold, but not quite as much.  If you're designing something like this, consider that option.
 
@@ -185,7 +185,7 @@ There was one attachment failure from magnet pullout; that required a rethink of
 
 So far, so good, with two caveats:
 * The metal FHCSes on the head will likely cause plastic wear on the docks.  That's expected.  Watch out for it, and if possible, consider higher-wear plastics, periodic replacement, or gentler detach speeds.
-* After many cycles of probing, the metal BHCS heads seem to wear in a way that affect probing repetability.  If you're getting jumps while doing probing of 0.1mm or so, this is a sign.  There's lots more which could be the cause, but in some cases, replacing the screws seems to magically restore the coupling back to triple-zero probing.  Perhaps you have some ideas for surface-treating the BHCSes to improve longevity, using a better grease, or changing to a material like titanium there.  Given that replacing the 2 screws takes a minute and pennies not dollars, I decided to move to release with this caveat.  Plus, if you use Beacon or similar, there's minimal use of the coupling to do probing, so you won't care about it.
+* After many cycles of probing, the metal BHCS heads seem to wear in a way that affect probing repeatability.  If you're getting jumps while doing probing of 0.1mm or so, this is a sign.  There's lots more which could be the cause, but in some cases, replacing the screws seems to magically restore the coupling back to triple-zero probing.  Perhaps you have some ideas for surface-treating the BHCSes to improve longevity, using a better grease, or changing to a material like titanium there.  Given that replacing the 2 screws takes a minute and pennies not dollars, I decided to move to release with this caveat.  Plus, if you use Beacon or similar, there's minimal use of the coupling to do probing, so you won't care about it.
 
 #### Spinoffs aplenty
 Lots of projects came out of this one, or at least were spurred on by it, as intermediate milestones, or more-broadly-useful projects of their own.  Nudge, Vampire Bat, SpeedClips, a magnet tester, plus a bunch of toolhead mods like DragonBrick, OmniBrick, A4TBrick, and more, including r2pdx's per-print offset-calibration macros.
