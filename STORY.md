@@ -24,11 +24,11 @@ I couldn’t see a good way to make this with a top-facing rail, so I tried out 
 
 So, the next Q this helped answer: will the torque of the gantry suffice to pull it on and off?
 
-I tried it... yes.  And you'd still have plenty of hold for the toolhead.  Runing the numbers with my motors, it seemed like maybe 20 lbs of gantry motion force at full motor current, with only a few lbs needed for a solid toolhead hold for a V0-scale toolhead.
+I tried it... yes.  And you'd still have plenty of hold for the toolhead.  Running the numbers with my motors, it seemed like maybe 20 lbs of gantry motion force at full motor current, with only a few lbs needed for a solid toolhead hold for a V0-scale toolhead.
 
 That was a sign that a toolchanger could happen, but I didn't like the push-push latches.  Sure, you can pack more heads densely in X, but you really want one big push-push latch, not 3; when 2/3 re-latch, that's bad.  Plus, they need a lot of travel to attach and detach.
 
-Magnets work great, so I wanted to try the simplest dock design I could imagine - one that held magnetically in place, with keylots:
+Magnets work great, so I wanted to try the simplest dock design I could imagine - one that held magnetically in place, with keyslots:
 
 | ![](Images/Early_Side_Mount.jpg) | ![](Images/Early_Side_Mount_2.jpg) |
 | --- | --- |
@@ -55,7 +55,7 @@ Anyway, back to MadMax.  I wanted to test the attach/detach motion, which requir
 
 Note that the balls are on the carriage and the pins on a plate, which attaches to each head.  The big design flaw this exposed is that you want the magnets higher-up, to better counteract the torque of the head.
 
-I moved to a front dock, thinking it would be more secure; side docking can want to twist the dock itself as the head detaches.  In hindsight, this isn't a fundamental issue, just a reminder to go thicker.  With a front dock you can also mod an existing toolhead, which seeemed like a nice benefit for a toolchanger conversion.  Here's how it looked:
+I moved to a front dock, thinking it would be more secure; side docking can want to twist the dock itself as the head detaches.  In hindsight, this isn't a fundamental issue, just a reminder to go thicker.  With a front dock you can also mod an existing toolhead, which seemed like a nice benefit for a toolchanger conversion.  Here's how it looked:
 
 | ![](Images/Front_Mount.jpg) | ![](Images/Front_Mount_2.jpg) |
 | --- | --- |
@@ -200,7 +200,7 @@ Lots of testing later from the beta team, and the focus had moved to long-term r
 
 The set screws holding in the wires - used for head detection through the plate, for the toolchanger firmware - would come loose with time.  Same issue as Poke... metal into plastic is bad in a hot chamber.
 
-At this point, many of us in the beta were doing Maxwell probing, where the coupling itself is the probe sensor, as it slides up, and the pins and screw heads break their connections.  Surprisngly, you can get triple-zero probing here - 0.000x mm Std Dev - which is vastly better than needed.
+At this point, many of us in the beta were doing Maxwell probing, where the coupling itself is the probe sensor, as it slides up, and the pins and screw heads break their connections.  Surprisingly, you can get triple-zero probing here - 0.000x mm Std Dev - which is vastly better than needed.
 
 But, that probing wasn't perfectly reliable over time.  There's a tradeoff which affects probing reliability.  If you increase the magnet force, potentially you get a better coupling, but potentially at the expense of higher probe forces, which may hurt repeatability.  Without numbers, it's all guesswork. That little gap also affects force, heavily.  What should it be?
 
@@ -243,7 +243,7 @@ By this release, SpeedClips where a thing too - yet another spinoff:
 
 SpeedClips open up the clip aperture, so you can adjust the belt position quickly.  They're awesome.
 
-All this knoweldge folded into a Beta2 release, with a completely new CAD, which uses Fusion configurations to enable 90 and 120 degree versions, as well as MGN9 and MGN12 variants, in one file.
+All this knowledge folded into a Beta2 release, with a completely new CAD, which uses Fusion configurations to enable 90 and 120 degree versions, as well as MGN9 and MGN12 variants, in one file.
 
 ![](Images/Beta2.png)
 
@@ -265,7 +265,7 @@ It was all shown for the first time, in person, at Reno VICE in October 2024, as
 
 More beta members, more lessons: connection reliability, build speed, and print quality are the big focus areas, still, which led to Beta3 in October 2024.
 
-This one had a complete CAD redo for maintability, plus extra sizes added (MGN12 w/ 9mm belts), and eliminated formed threads.
+This one had a complete CAD redo for maintainability, plus extra sizes added (MGN12 w/ 9mm belts), and eliminated formed threads.
 
 At this point, it becomes clearly that this is not that crazy.  Lots of people are succeeding with builds and impressive prints.
 Some surprising benefits from living with it for a year:

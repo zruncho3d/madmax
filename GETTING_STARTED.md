@@ -18,8 +18,8 @@ Expanding your frame is premature optimization, if you don't have a driving use 
 Remember though, that this loss is almost entirely in two-extruder mode.  With a single extruder, you don't lose the front corners, though you may lose a little bed of bed from doing a bed Y shift.  Speaking of which...
 
 **Shift the bed?** If your frame has no overtravel, you need a bed shift in Y to avoid the inactive nozzle touching your bed - either melting the build plate, or preventing bed leveling.  On some printers, like Trident, there is built-in overtravel which helps clear the nozzles, as well as give space to use something like a Nudge probe too.  Some methods to achieve a Y shift include:
-* Adding bed-shift mounts to a bedrame, like the Tri-Zero bed mounts - or removing them and direct-mounting to an extrusion (like Zruncho did for MM.000)!
-* Modifying front Z attachments to shift the bedrame pivots
+* Adding bed-shift mounts to a bedframe, like the Tri-Zero bed mounts - or removing them and direct-mounting to an extrusion (like Zruncho did for MM.000)!
+* Modifying front Z attachments to shift the bedframe pivots
 * Doing nothing; if the MadMax core shifts your head forward already, no additional motion may be needed
 * Moving the printer front forward, with a fridge-door mod, to create clearance for the front shift.
 
@@ -88,7 +88,7 @@ A .step file is provided for the entire brick version of the toolhead, which is 
 
 The A4T is a solid option, intended for longer, higher-flow hotends, with dual 40mm fans, a 2510 hotend fan, and CFD flow optimization for strong cooling.
 
-Unlike other toolhead options, andrewmcgr added support for the A4T and XOL by modifying the MadMax plate to have its own L-shaped piece to hold the dock screws, instead of modifying the *toolhead itself* to add those.  It sounds like it will be flimsy, but feels and is prenty strong in practice.  Plus, there is no need to port toolhead changes in the future.  Both toolhead options share the same modified plate.
+Unlike other toolhead options, andrewmcgr added support for the A4T and XOL by modifying the MadMax plate to have its own L-shaped piece to hold the dock screws, instead of modifying the *toolhead itself* to add those.  It sounds like it will be flimsy, but feels and is plenty strong in practice.  Plus, there is no need to port toolhead changes in the future.  Both toolhead options share the same modified plate.
 
 There is an optional modified MGN12H carriage which adds Beacon/Cartographer support, provided by this mod, too.
 

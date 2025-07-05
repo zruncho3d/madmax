@@ -48,7 +48,7 @@ The toasty environment near the toolhead can cause issues which yield a reductio
   * Check that the non-electrically-connected pins (the other 4) are not dented.  PTFE will deform with time, temp, and pressure.  That's why Acetal is the spec'ed material, as it is a harder-wearing, yet still low-friction material.  If these pins are dented, it will be harder to get reliable probing.
 * Z motion:
   * Ensure that Z pulley setscrews are tight and secured with threadlocker.  The higher probe force of the MadMax coupling (up to ~1kg) has a habit of revealing issues in the Z motion side.  A way to get evidence for such an issue is to run `PROBE_ACCURACY` near each Z attachment.
-  * Ensure that each Z belt is at appropriate tension.  If a belt slips and one side is weaker, this can yield a peristent probe offset or reduced repeatability.
+  * Ensure that each Z belt is at appropriate tension.  If a belt slips and one side is weaker, this can yield a persistent probe offset or reduced repeatability.
 * Other:
   * Electrical connections outside the core can become loose too, like a failed umbilical wire or bad crimp on the mainboard or toolhead board side.
 

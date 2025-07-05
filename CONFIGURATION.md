@@ -257,7 +257,7 @@ For all the params below, align visually.
   * No, we don't know of a way (yet) to dynamically change the desired bed-probing points, based on the heads that are present.
 * If you want to print with T0, you’re probably done with the config side.
   * Do a quick print with T0. It’s a good test.
-* Note - there’s a `toolchanger_1_as_primary.cfg` file, which is similar to `toolchanger_0.cfg`, but it has T1 pretend to be Tool 0.  You can use this config file as a high-availabilty backup, to not have to change anything, including the slicer, if head 0 has an issue.  
+* Note - there’s a `toolchanger_1_as_primary.cfg` file, which is similar to `toolchanger_0.cfg`, but it has T1 pretend to be Tool 0.  You can use this config file as a high-availability backup, to not have to change anything, including the slicer, if head 0 has an issue.  
   * Recommended: update the params just like T0, and do a quick print with just T1 acting as T0. Make sure to update the pin used for X homing and Z probing to the other head there.  The only change in the file is the tool number, as `klipper-toolchanger` doesn’t want just tool 1 defined.
 * Do your PID tuning, EM, and PA for each new head.
   * Again, after running the calibrations you will have to manually enter the determined values into the respective `toolhead_(n).cfg`.

@@ -89,6 +89,7 @@ There are two types of FHCS used here: magnet-retention screws up top (3x, stain
   * ⚠️GENTLY clean all 6x pin holes with a reamer, to avoid the carriage splitting between layers when you add the pins.  A light twist is probably more than enough.
   * Make plastic pins (4x)
     * Typically 9-10mm is a good length for these.  To cut acetal, DON’T use a tube cutter, as you may destroy it!  Use something stronger, like thick wire cutters or flush cutters.  Mark a length with a Sharpie, then cut to length, then trim the ends for easier insertion.
+  * Remove the insulation on the ring terminals: use flush cutters to cut the insulation on the open end to get a grippable tab, then put an allen key through the ring, and pull with pliers (gripping hard!) on the tab.  It should come right off.
   * (Endstop-switch-based homing option only - recommended)
     * Cut two 60mm wires and strip one end of each.
     * Solder and heatshrink both wires to the switch.
