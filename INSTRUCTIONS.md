@@ -101,10 +101,10 @@ There are two types of FHCS used here: magnet-retention screws up top (3x, stain
     * The metal pins are the lower ones on each side of the carriage, which complete the circuit.
     * Press pins until fully inserted, from the outside, until they just touch the inner “leg” edge.  Start with fingers, then push to fully inserted by pressing against a flat surface.
   * Plastic pins (4x)
-    * Press the two upper pair of pins on the sides of the carriage into place, until you can't see the ends.
+    * Press the upper pin on each side of the carriage into place, until you can't see the end.
     * Press in the two pins on the top of the carriage, until they hit the stops.
       * Yes, the top ones stick out intentionally, for easy removal with flush cutters.  
-    * All other 4 lower pins can be removed later using an allen wrench, pushing in on the holes.
+    * All 4 lower pins can be removed later using an allen wrench, pushing in on the holes.
 * Add magnets
   * ⚠️Decide how many, and which type, of toolhead magnets to use.  The toolhead weight, carriage size, and probing type affect the choice.
     * Always balance the magnets around an FHCS, so it doesn’t twist out.  Don’t use 3 magnets; always use 2 or 4.  Use a weak 3rd + 4th magnet for balance, or just use 2.
