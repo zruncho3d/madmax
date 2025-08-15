@@ -64,7 +64,7 @@ Brickified toolheads tend to be harder to make when there’s a large shaft in f
 
 The DragonBurner and RapidBurner are toolheads by Chirpy, which are super-narrow (54mm wide), have wide extruder support, and have good cooling from 40mm fans.  They use a 3010 hotend fan.
 
-Rob developed DragonBrick and DragonBurner based on these, with modifications for toolchanging using MadMax docks, plus matching extruder mods with a square front toolhead-board mount and cover to keep the wires tidy.  This is a surprisingly narrow and compact-in-depth setup, especially with the K1 extruder mod.
+Rob developed DragonBrick and RapidBrick based on these, with modifications for toolchanging using MadMax docks, plus matching extruder mods with a square front toolhead-board mount and cover to keep the wires tidy.  This is a surprisingly narrow and compact-in-depth setup, especially with the K1 extruder mod.
 
 The full list of modifications include:
 * Reshaping the front Cowl for more rigid air ducts
@@ -76,7 +76,7 @@ The full list of modifications include:
 
 As a mod, these toolheads accept available Dragon Burner and Rapid Burner hotend mounts.
 
-A .step file is provided for the entire brick version of the toolhead, which is designed around a modified K1 extruder and EBB42 board.
+A [.step file](https://github.com/robwaldhauser/Dragon-Brick) is provided for the entire brick version of the toolhead, which is designed around a modified K1 extruder and EBB42 board.
  * K1 Extruder parts links:
    * AliExpress
      * [Extruder body](https://www.aliexpress.us/item/3256804562096106.html), $20.50
