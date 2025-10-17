@@ -93,6 +93,8 @@ There are two types of FHCS used here: magnet-retention screws up top (3x, stain
   * (Endstop-switch-based homing option only - recommended)
     * Cut two 60mm wires and strip one end of each.
     * Solder and heatshrink both wires to the switch.
+    * These wires connect the endstop switch to the Maxwell coupling pins.  The endstop is wired in series with the Z probe circuit.
+    * Alternative: connect the endstop directly to any available endstop pin on your mainboard.
   * (Sensorless homing option only)
     * Cut and strip both ends on one 60mm wire.
 * Add pins
@@ -119,7 +121,13 @@ There are two types of FHCS used here: magnet-retention screws up top (3x, stain
 * (Sensored homing only)
   * The orientation of the switch (plunger up, or plunger down?) will depend on the printer type.
   * Secure the endstop switch with two M2 self-tapping screws; fully tighten them, but be careful not to overtighten.
+  * Wire routing: Feed the two wires from the endstop switch down to the Maxwell coupling pins at the bottom of the carriage.  One wire connects to each metal pin.
+
+| ![](Images/Instructions/endstop_carriage_front.jpg) | ![](Images/Instructions/endstop_carriage_rear_wiring.jpg) |
+| --- | --- |
+| Endstop switch installed (front view) | Wire routing from switch to Maxwell pins (rear view) |
 * Add electrical-wire connections
+  * For the carriage, you'll be connecting either: (a) endstop switch wires (sensored homing), or (b) a single jumper wire (sensorless homing).
   * Slip an M3 shim in from the bottom.
   * Push a shiny metal FHCS through the washer, so the washer stays in place.
   * Push wire into place.  No wire insulation should overlap the washer and nut.  You want a solid connection, so try to bend the wire around the screw before the nut comes in.
@@ -162,6 +170,11 @@ Parts needed:
   * Trim one wire side slightly shorter, and feed it straight down, through the vertical slot, to where it can enter the screw/nut area.
   * Route the other end of the wire through the 3 tunnels.  Adjust the length of the short or long wire to match; both should just touch the bottom brace.
   * Strip both wire ends 6-8mm, or whatever length works best for your crimp terminals.  Need more length?  Pull it through.   Excess may be taken up at the toolhead.
+
+<img src="Images/Instructions/endstop_plate_wiring.jpg" width="400">
+
+*Plate wiring routed to toolhead board*
+
 * Add electrical-wire connections
   * Using the crimp tool, crimp the ring terminals to the wires.
   * Put the crimps in place, with the thick part facing into the cutout, and for each, add the M3x8 BHCS-nut assembly and fully tighten.
