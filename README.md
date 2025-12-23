@@ -26,6 +26,7 @@ Enable multi-material printing *on the printer you already own* - with low cost,
 | r2pdx's Micron 180 (MM.010) | ![](Images/Builds/r2pdx_10_front_1920.png) | ![](Images/Builds/r2pdx_10_part_scaled.png) | Micron 180r1, AntHeads with modified ducts and WWG2 extruders, Nudge, gantry-mounted docks by r2pdx (also tested frame mounted docks).|
 | Yell's [Ender3-to-Trident-conversion](https://github.com/yell3D/Ender3dent) (MM.011) | ![](Images/Builds/yell_11_front_1920.jpg) |![](Images/Builds/yell_11_part_1920.jpg) | E3dent, AntHeads, GBB15 gantry board/CAN bridge; docks, bucket & brush by Yell. Crossbar for >= 2 heads!|
 | Vlad's 300-ish Trident (MM.012) | ![](Images/Builds/vlad_12_front_1920.jpg) |![](Images/Builds/vlad_12_part.jpg) | A4T, Sherpa Mini, Andrew's add-on brackets, extended Ambrosia's docks. Eddy current XY toolhead alignment! |
+| burkfers' Micron (MM.013) | ![](Images/Builds/burkfers_hamlet_front.jpg) | ![](Images/Builds/burkfers_hamlet_part.jpg) | Micron R1, Antheads, [2pug2ecas passthrough](User%20Mods/burkfers/Micron/A%20drive%20X%20endstop/), [modified r2pdx's docks](User%20Mods/burkfers/Micron/modified%20r2pdx%20docks/), [A drive mounted X endstop](User%20Mods/burkfers/Micron/A%20drive%20X%20endstop/) |
 
 Learn more from videos:
 * [Canuck Creator interviews Ambrosia](https://www.youtube.com/watch?v=dB9FqNF6or0&t=164s) - with a MadMax Trident
