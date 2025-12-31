@@ -99,6 +99,7 @@ NOTE: **per head totals**, below:
  * **2x M3 Jam Nuts** (1.8mm thick) OR 8x M3 6mm-OD shims (0.5mm thick)
  * **2x ring crimp terminals with 3mm hole**
  * **250mm 2-position zip wire** for connection to toolhead board; see note on sizing, in carriage section
+   * Example: [AliExpress](https://www.aliexpress.us/item/2251832766791205.html?spm=a2g0o.order_list.order_list_main.15.38e21802pqRksv&gatewayAdapt=glo2usa4itemAdapt)
  * Optional Magnet-Retaining Screws
    * **3x M3x6 FHCS**; alloy or steel OK
    * **3x M3 nut**
