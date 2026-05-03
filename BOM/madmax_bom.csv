@@ -1,0 +1,52 @@
+Section,Subsection,Qty,Spec / size,Item,Requirement / variant,Notes,Source / supplier
+Carriage Parts,Maxwell Pins,2,1/8 in dia x 1/2 in length,Metal pins,"Preferred: 416 or 316 stainless, steel, aluminium or titanium acceptable",3/8 in length acceptable. 3 mm local option works if STLs are exported for it. Only centre contact area matters.,https://www.amazon.com/dp/B09M84DNT6; https://www.mcmaster.com/98380A471; https://www.mcmaster.com/97395A441
+Carriage Parts,Maxwell Pins,4,1/8 in dia x 1/2 in length,Plastic pins,"Best: POM, Acetal, Delrin or Kocetal",POM-H and POM-C should work. Steel pins likely work with higher force. PTFE not OK. 3 mm local option requires exported STLs.,https://www.mcmaster.com/97155A426; https://www.mcmaster.com/catalog/130/4126/8497K11
+Carriage Parts,Belt Pins,2,3 mm x 35 mm,Steel pins,"Rounded ends preferred, chamfered pins acceptable","Alternatives: M3x30 SHCS/BHCS, M3x35 SHCS/BHCS with nut(s), or 1/8 in pins with plastic drill-out and tube choice impact.",https://www.aliexpress.us/item/3256803440853860.html; https://www.amazon.com/gp/product/B07M9TS54L; https://www.mcmaster.com/91595A117; https://www.mcmaster.com/91595A140; https://www.mcmaster.com/98380A478
+Carriage Parts,Belt Pins,2,M3 Voron standard,Heatset inserts,Drill out to fit onto pins,Different M3 heatset specs are fine.,
+Carriage Parts,Belt Clips / SpeedClips,2,M3x10,BHCS,For belt clips,,
+Carriage Parts,Belt Clips / SpeedClips,2,MakerBeam XL,T-nuts,From V0 parts list,Can make your own in a pinch.,https://www.amazon.com/MakerBeam-XL-MakerBeamXL-15x15mm-Diameter/dp/B06XHQHD4H
+Carriage Parts,Belt Clips / SpeedClips,2,"Metal tube, length varies",Metal tubes,"Recommended sizes: metric 4 mm OD, 3.2 mm ID, or English 5/32 in OD x 0.014 in wall","Tube length depends on belt width and belt path gap. File to length. MGN9H: 14.5 mm. MGN12H with 6 mm belts: 15.5 mm. MGN12H with 9 mm belts: 21.5 mm. Stainless best, aluminium fine, brass OK, PTFE only temporary.",Ace K&S #8103; https://www.mcmaster.com/50415K59; https://www.mcmaster.com/50415K61; https://www.mcmaster.com/89785K816; https://www.mcmaster.com/89785K217; https://www.mcmaster.com/89895K716; https://www.mcmaster.com/89895K217
+Carriage Parts,Main electrical connections,2,"M3x8, stainless",FHCS,Must be conductive,M3x10 also OK. No black alloy.,
+Carriage Parts,Main electrical connections,2,"M3, 0.5 mm thick, 7 mm OD",Shims,,,
+Carriage Parts,Main electrical connections,2,M3,Nut,,,
+Carriage Parts,Other,4,M3x8,SHCS,For carriage attachment,BHCS OK as workaround.,
+Carriage Parts,"Homing, sensored",1,"~120 mm, 22 to 26 gauge, <1.8 mm OD",Wire,Recommended endstop based homing,Use less than 1.8 mm OD wire.,https://www.aliexpress.us/item/2251832766791205.html
+Carriage Parts,"Homing, sensored",1,Omron D2F or similar,Endstop switch,Usual Voron standard switch for X endstop,Plus endstop of choice for Y.,
+Carriage Parts,"Homing, sensored",2,M2,Self-tapping screws,,,
+Carriage Parts,"Homing, sensorless",1,"60 mm, 22 to 26 gauge, <1.8 mm OD",Wire,Sensorless homing not recommended,Use less than 1.8 mm OD wire.,https://www.aliexpress.us/item/2251832766791205.html
+Carriage Parts,Magnets,6,6x3 mm N52,Neodymium magnets,Actual amount depends on toolhead weight and bed stability,"Use 4 to 6. Must be real N52. Known-good vendors recommended, not Amazon or AliExpress.",https://www.fabreeko.com/products/n52-neodym-magnet-6x3mm-schwarz
+Carriage Parts,Optional magnet-retaining screws,3,M3x8,FHCS,"Required if used in chamber, probably optional in free air","M3x10 depth OK. Must be 5.8 to 5.9 mm head diameter, not 5.5 mm. Black alloy steel or stainless OK.",
+Carriage Parts,Optional magnet-retaining screws,3,M3,Nuts,,,
+"Plate Parts, per head",Maxwell Coupling,2,M3x8,BHCS,Must be conductive,"Stainless, not coated alloy.",
+"Plate Parts, per head",Maxwell Coupling,1,M3xX,Top screw,Depends on head choice,"Does not need to be conductive. No writing, no rough surface, shiny and smooth.",
+"Plate Parts, per head",Maxwell Coupling,5,M3,Nuts,3 should be 2.2 to 2.4 mm thickness,Find 3 that match.,
+"Plate Parts, per head",Maxwell Coupling,2,M3x8,BHCS,Lower toolhead attachment,,
+"Plate Parts, per head",Maxwell Coupling,6,6x3 mm N52,Magnets,See carriage magnet note,,
+"Plate Parts, per head",Maxwell Coupling,4,M3 Voron standard,Heatset inserts,,,
+"Plate Parts, per head",Maxwell Coupling,2,"M3, 1.8 mm thick",Jam nuts,"Alternative: 8x M3 6 mm OD shims, 0.5 mm thick",,
+"Plate Parts, per head",Maxwell Coupling,2,3 mm hole,Ring crimp terminals,,,
+"Plate Parts, per head",Maxwell Coupling,1,"250 mm, 2-position",Zip wire,Connection to toolhead board,See sizing note in carriage section.,
+"Plate Parts, per head",Optional magnet-retaining screws,3,M3x6,FHCS,Alloy or steel OK,,
+"Plate Parts, per head",Optional magnet-retaining screws,3,M3,Nut,,,
+Dock and toolhead dependent,"Docks, per dock",3 to 4,6x3 mm N52,Magnets,Commonly 3 to 4 per dock,Depends on dock and printer.,
+Dock and toolhead dependent,"Docks, per dock",Varies,M3 or M5,Mounting screws,Quantity depends on dock and printer,,
+Dock and toolhead dependent,"Xol/A4T dock by andrewmcgr, per dock",8,M3x8,SHCS or BHCS,,,
+Dock and toolhead dependent,"Xol/A4T dock by andrewmcgr, per dock",8,Voron M3,Heatsets,"Original BOM says headsets, likely heatsets",Check vendor docs.,
+Dock and toolhead dependent,"Xol/A4T dock by andrewmcgr, per dock",2,M5x10,Screws,,,
+Dock and toolhead dependent,"Xol/A4T dock by andrewmcgr, per dock",2,M5x20,Screws,,,
+Dock and toolhead dependent,"Xol/A4T dock by andrewmcgr, per dock",4,M5,Extrusion nuts,,,
+Dock and toolhead dependent,"Xol/A4T dock by andrewmcgr, per dock",3,6x3 mm,Magnets,,,
+Dock and toolhead dependent,Second toolhead,1,Typical hotend set,Toolhead components,"Fans, hotend, toolhead board, bowden, screws, ECAS and related parts",Check toolhead vendor first.,
+Dock and toolhead dependent,"DragonBrick / RapidBrick, per head",3,M3x8,FHCS,Must be alloy,,
+Dock and toolhead dependent,"XOL/A4T by andrewmcgr, per toolhead",3,M3x8 or M3x6,FHCS,"Must be strongly magnetic, steel not stainless",,
+Dock and toolhead dependent,"XOL/A4T by andrewmcgr, per toolhead",1,M3x16,Screw,,,
+Dock and toolhead dependent,"XOL/A4T by andrewmcgr, per toolhead",1,M3x12,SHCS or BHCS,,,
+Dock and toolhead dependent,"XOL/A4T by andrewmcgr, per toolhead",2,Extra,Heatsets,,,
+Dock and toolhead dependent,AntHead,1,See repo,AntHead parts,See AntHead repo,,
+Dock and toolhead dependent,"OmniBrick, per head",4,M3x8,FHCS,Must be alloy,,
+Dock and toolhead dependent,"OmniBrick, per head",2,,Heatsets,Add in post at bottom rear of cowl,,
+Dock and toolhead dependent,"OmniBrick, per head",1,M3x6,FHCS,For Huvud shroud,,
+Optional / recommended,Nudge,1,Optional,Nudge,"Not technically required, highly recommended",See Nudge GitHub page.,https://github.com/zruncho3d/nudge
+Optional / recommended,Additional spool holder,1,Optional,Spool holder,,,
+Optional / recommended,Additional Bowden / ECAS,1,Optional,Bowden / ECAS,,,
+Optional / recommended,Upgraded PSU,1,Optional,Power supply,May be necessary,Use comfortable margin or measure consumption with an inline power meter.,
